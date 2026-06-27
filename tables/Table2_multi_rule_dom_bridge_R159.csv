@@ -1,0 +1,6 @@
+rule,type,weight_pct,bridge_usd_billion,label
+obligation_share,allocation,16.18-17.08,3.52,DOM/RTO Base UCAP obligation share x wedge
+annual_peak_share,allocation,16.11-17.45,3.50,DOM/RTO annual peak share x wedge (approx)
+zonal_price_weighted,allocation,~19.2,4.07-4.08,adjusted zonal-capacity-price-weighted
+net_of_CTR,allocation_bound,~15,~3.20,illustrative net of Capacity Transfer Rights credits
+dc_load_attribution,causation_illustration,36-67,7.7-14.2,ILLUSTRATION ONLY; nonlinear; not a borne cost or DOM clearing

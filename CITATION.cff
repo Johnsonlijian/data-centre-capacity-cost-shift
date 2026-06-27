@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite it as below."
+title: "Data-centre capacity-cost shift reproducibility package"
+authors:
+  - family-names: "REN"
+    given-names: "Lijian"
+    orcid: "https://orcid.org/0000-0003-1629-4368"
+version: "0.1.0"
+date-released: "2026-06-27"
+repository-code: "https://github.com/Johnsonlijian/data-centre-capacity-cost-shift"
+license: "MIT AND CC-BY-4.0"
+keywords:
+  - data centres
+  - capacity markets
+  - PJM
+  - cost allocation
+  - energy justice
+  - reproducibility
+abstract: "Author-created code, derived tables and generated figures supporting a public-record analysis of forecast data-centre load and socialized capacity-market costs."
+
