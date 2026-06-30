@@ -3,7 +3,7 @@
 ## Included
 
 - Author-created scripts that use relative paths.
-- Derived CSV datasets and source-locking tables.
+- Derived CSV datasets and data-source inventory tables.
 - Generated figures exported from the analysis.
 - Runbook, citation metadata and provenance notes.
 
@@ -18,4 +18,3 @@
 ## Claim Boundary
 
 This package supports wholesale/capacity-market and source-record claims. It does not estimate household bills and does not close the confidential zone-to-LSE or retail class-allocation steps.
-

@@ -10,8 +10,9 @@ This repository contains author-created code, derived tables and generated figur
 
 - PJM cross-zonal causation-versus-burden shares from derived zone-level data.
 - Forecast-vintage non-stationarity checks.
-- Source-locking and variable-closure tables used to bound claims.
-- Main manuscript figures and the supplementary closure-taxonomy figure.
+- Structural price-amplification, supply-elasticity, over-procurement and cross-market checks.
+- Data-source inventory and variable-closure tables used to bound claims.
+- Main manuscript figures and supplementary figures as PDF, SVG and PNG.
 - Reproducibility smoke tests that verify the key derived numerical claims in the package.
 
 ## Key Bounded Claims
@@ -24,8 +25,9 @@ This repository contains author-created code, derived tables and generated figur
 ## Repository Structure
 
 - `data/`: derived CSV datasets used by the reproducibility script.
-- `tables/`: source-locking, closure, bridge and cross-market test tables.
-- `figures/`: publication figures exported as PDF.
+- `code/`: current analysis and figure scripts plus their derived inputs.
+- `tables/`: closure, bridge, data-source inventory and cross-market test tables.
+- `figures/`: publication figures exported as PDF, SVG and PNG.
 - `scripts/reproduce_results.py`: relative-path smoke test and diagnostic plot builder.
 - `docs/public_private_boundary.md`: what is and is not released.
 - `DATASETS_AND_LINKS.csv`: official source provenance and redistribution boundary.
@@ -39,9 +41,8 @@ python -m pip install -r requirements.txt
 python scripts/reproduce_results.py
 ```
 
-Expected outputs are written to `outputs/`, including `claim_checks.json`, `claim_checks.csv`, and regenerated diagnostic PNGs.
+Expected outputs are written to `outputs/`, including `claim_checks.json`, `claim_checks.csv`, and regenerated diagnostic PNGs. To regenerate the publication figures, run the figure scripts in `code/` as listed in `REPRODUCIBLE_RUNBOOK.md`.
 
 ## License
 
 Code is released under the MIT License. Author-created derived tables, documentation and generated figures are released under CC BY 4.0. Third-party official source materials are not redistributed and are not relicensed by this package.
-

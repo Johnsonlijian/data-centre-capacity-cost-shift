@@ -1,5 +1,0 @@
-market,firm_forecast_gate,admin_demand_curve,consumption_proportional_recovery,prediction,observed,note
-PJM,yes (firmness/70% derate/36mo ramp/dup filter),yes (VRR),yes (LRC pro-rata on peak),gap,"gap observed (DOM 3.8x; HHI 0.44)","worked instance"
-MISO,yes (41% attrition),yes (seasonal RBDC),yes in binding summer / localizes in constrained fall,gap (seasonal),"gap observed in binding summer; fall localizes",second market
-ISO-NE,forming 2026 (CELT large-load framework),yes (FCM),yes,gap predicted as load concentrates,"forward test (not yet)",prediction
-ERCOT,no forward capacity auction,no,n/a (energy-only),no gap,"no gap; cost via interconnection/transmission",negative control

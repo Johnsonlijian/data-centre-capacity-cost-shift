@@ -1,0 +1,19 @@
+{
+  "point_transfer_share_pct": 78.4,
+  "point_transfer_B": 16.67,
+  "mc_share_median_pct": 81.4,
+  "mc_share_CI90_pct": [
+    74.2,
+    88.7
+  ],
+  "mc_transfer_B_median": 17.31,
+  "mc_transfer_B_CI90": [
+    15.77,
+    18.85
+  ],
+  "cap_auctions_exact": [
+    "2026/27",
+    "2027/28"
+  ],
+  "note": "2 of 3 auctions cleared at the cap (uniform pricing): for them the transfer is structurally exact, not an average-price approximation."
+}

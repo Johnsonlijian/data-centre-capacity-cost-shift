@@ -1,0 +1,17 @@
+{
+  "clean_source": "2025/26 BRA (only recent auction clearing BELOW the cap)",
+  "counterfactual_price_P0": 145.7,
+  "actual_price_P1": 269.92,
+  "inverse_supply_elasticity_point": 15.7,
+  "inverse_supply_elasticity_CI90": [
+    12.8,
+    18.9
+  ],
+  "interpretation": "a 1% increase in cleared quantity is associated with ~16% higher clearing price (steeply inelastic supply near scarcity)",
+  "imm_modelfree_crosscheck_elasticity": 31.8,
+  "cap_bound_years_excluded": [
+    "2026/27",
+    "2027/28"
+  ],
+  "caveats": "2025/26 methodology break + FRR + footprint changes preclude a pooled cross-year supply regression; cap-bound years truncate the slope (lower bounds only)."
+}
