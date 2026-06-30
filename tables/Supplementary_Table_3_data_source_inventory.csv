@@ -15,11 +15,11 @@ gs5_approved,[23;27],SCC Data Center Initiatives sheet p.2; PUR-2025-00058 (2025
 queue_pending,[17],SCC PUR-2026-00011 (filed 2026-02-02),"p.7 ~70,000 MW queue; ~3x DOM peak 24,678 MW",Results 4.1 / 4.6,VERIFIED_PRIMARY
 jlarc_benchmark,[24],JLARC Report 598 (2024),"Table 4-2 pp.65-66 $14-37/mo; retail-choice line ~p.72 $600M/yr ($150/yr)",Results 4.6 (external benchmark),VERIFIED_PRIMARY
 e3_reconciliation,[24],JLARC/E3 Virginia Data Center Study (2024-12-09),"p.76 no historic shift; pp.21,84 prospective hazard quotes",Results 4.3,VERIFIED_PRIMARY
-no_shift_industry,[3;4],IER; CRA for EEI,EXACT TITLE/DATE/URL,corroborating 'no historical shift' pole,TO_SOURCE_LOCK_BEFORE_SUBMISSION
-peskoe,[2],Peskoe & Martin Harvard EELP (2025),Extracting Profits from the Public,qualitative socialization-dynamic citation,CONFIRM_DETAILS_IF_KEPT
+no_shift_industry,[3;4],IER and CRA/EEI data-centre cost and rate analyses (2025),reference-list metadata and source URLs,corroborating 'no historical shift' pole,SECONDARY_CONTEXT
+peskoe,[2],Peskoe & Martin Harvard EELP (2025),Extracting Profits from the Public,qualitative socialization-dynamic citation,VERIFIED_SECONDARY
 ferc_colocation_order,[31],FERC co-located load/BTMG order + Fact Sheet (18 Dec 2025),Docket EL25-49-000 et al.,"PJM tariff unjust; failure to allocate costs to causers, in violation of cost causation principles; directs 3 new transmission services + BTMG reform",Intro / Discussion 5.3,VERIFIED_SECONDARY_LAWFIRM+FERC_FACTSHEET
-ferc_opc_complaint,[32],Maryland OPC et al. complaint,FERC Docket EL26-63-000 (filed 7 May 2026),pending cost-allocation/cost-causation complaint on PJM RTEP,Intro,URL_pjm_hosted_pdf
-miso_concentration_capacity,[33],MISO Dec-2024 LTLF whitepaper,"Figure 9 (LRZ growth; LRZ1 +4 GW DC); Figure 13 (Incremental DC Capacity GW; 41% attrition; ~7 GW 2030, ~22 GW 2040), p.13/19",projected DC capacity + 41% attrition gate,Sec 5.2 / Fig 6,VERIFIED_PRIMARY_PDF
-miso_pra_price,[35],MISO 2025/26 PRA Results (29 May 2025),"summer ACP $666.50/MW-day uniform all 10 zones; fall N $91.60/S $74.09 (SRPBC binding); winter $33.20; spring $69.88",socialization (summer) + localization caveat (fall),Sec 5.2 / Fig 6,VERIFIED_PRIMARY_PDF
-miso_concentration_energy,[33],industry analysis of MISO forecast (Modo/Utility Dive 2025),Central MISO ~58% of DC energy growth by 2046 (energy basis; secondary),concentration (energy basis, labelled),Sec 5.2 / Fig 6,SECONDARY_LABELLED
-isone_celt,[34],ISO-NE 2026-2035 CELT Report (May 2026),inaugural large-load forecast framework,Sec 5.2 (gate emerging),TO_SOURCE_LOCK_PRIMARY_BEFORE_SUBMISSION
+ferc_opc_complaint,[32],Maryland OPC et al. complaint,FERC Docket EL26-63-000 (filed 7 May 2026),pending cost-allocation/cost-causation complaint on PJM RTEP,Intro,PUBLIC_DOCKET_RECORD
+miso_concentration_capacity,[33],MISO Dec-2024 LTLF whitepaper,"Figure 9 (LRZ growth; LRZ1 +4 GW DC); Figure 13 (Incremental DC Capacity GW; 41% attrition; ~7 GW 2030, ~22 GW 2040), p.13/19",projected DC capacity + 41% attrition gate,Sec 5.2 / Fig 5,VERIFIED_PRIMARY_PDF
+miso_pra_price,[35],MISO 2025/26 PRA Results (29 May 2025),"summer ACP $666.50/MW-day uniform all 10 zones; fall N $91.60/S $74.09 (SRPBC binding); winter $33.20; spring $69.88",socialization (summer) + localization caveat (fall),Sec 5.2 / Fig 5,VERIFIED_PRIMARY_PDF
+miso_concentration_energy,[33],industry analysis of MISO forecast (Modo/Utility Dive 2025),Central MISO ~58% of DC energy growth by 2046 (energy basis; secondary),concentration (energy basis, labelled),Sec 5.2 / Fig 5,SECONDARY_LABELLED
+isone_celt,[34],ISO-NE 2026-2035 CELT Report (May 2026),inaugural large-load forecast framework,Sec 5.2 (gate emerging),VERIFIED_PRIMARY
