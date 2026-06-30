@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-"""Figure 4: price-amplification transfer — structural decomposition + GPU MC robustness.
+"""Figure 4: price-amplification transfer — structural decomposition + Monte Carlo robustness.
 Panel (a): stacked $B bars by delivery year (resource cost teal | transfer amber), with
-3-auction total. Panel (b): GPU Monte-Carlo posterior of transfer share, with 4-method band.
+3-auction total. Panel (b): Monte Carlo posterior of transfer share, with 4-method band.
 """
 import os, json
 import numpy as np
@@ -118,7 +118,7 @@ axL.legend(handles=legend_els, loc="upper right", frameon=False,
            fontsize=8.0, handlelength=1.1)
 axL.set_title("(a)   Per-delivery-year P×Q decomposition", loc="left", fontsize=10)
 
-# ── Panel (b): GPU Monte-Carlo posterior ──────────────────────────────────────
+# ── Panel (b): Monte Carlo posterior ──────────────────────────────────────────
 mc_path = os.path.join(HERE, "P1_mc_share.npy")
 j_path  = os.path.join(HERE, "P1_structural_transfer.json")
 
@@ -143,7 +143,7 @@ if os.path.exists(mc_path) and os.path.exists(j_path):
 
     axR.set_xlabel("inframarginal-transfer share (%)", fontsize=9)
     axR.set_ylabel("posterior density", fontsize=9)
-    axR.set_title("(b)   GPU Monte-Carlo robustness check\n"
+    axR.set_title("(b)   Monte Carlo robustness check\n"
                   r"      8$\times$10$^6$ draws over 2025/26 price-reference uncertainty",
                   loc="left", fontsize=9.5)
     axR.yaxis.set_ticks([])

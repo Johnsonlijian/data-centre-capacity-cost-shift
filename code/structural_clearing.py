@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-R167 Phase 1 — Structural PJM RPM clearing model (GPU-accelerated Monte-Carlo).
+Structural PJM RPM clearing model (vectorized Monte Carlo).
 
 Goal: replace the average-price accounting identity with a CALIBRATED structural
 re-clear. Supply curve calibrated per auction to reproduce BOTH the observed
 clearing point AND the IMM counterfactual (the trusted structural anchor). Then:
   - decompose the IMM revenue effect into a MARGINAL inframarginal transfer vs resource,
-  - propagate calibration/geometry uncertainty via a large GPU Monte-Carlo,
+  - propagate calibration/geometry uncertainty via a large vectorized Monte Carlo,
   - exploit that 2 of 3 auctions cleared at the price cap (uniform pricing -> the
     transfer interpretation is structurally EXACT for them, not an approximation).
 
@@ -55,7 +55,7 @@ for k,a in AUC.items():
 # Pmarg0 = Rev0/Q0/365. Then the inframarginal transfer (price rise applied to the
 # pre-existing obligation Q0) is EXACT:   transfer = Q0*(Pmarg - Pmarg0)*365.
 # For 2025/26 (cleared below cap, LDA premium ~$1.3B) we treat the split as uncertain and
-# Monte-Carlo the share of the effect that is RTO-marginal vs LDA-premium.
+# Monte Carlo the share of the effect that is RTO-marginal vs LDA-premium.
 # ---------------------------------------------------------------------------
 def structural_point():
     rows={}
@@ -85,13 +85,13 @@ for k,r in rows.items():
 print(f"AGG marginal-structural transfer = ${tot_t/1e9:.1f}B / ${tot_d/1e9:.1f}B = {100*tot_t/tot_d:.1f}%")
 
 # ---------------------------------------------------------------------------
-# GPU Monte-Carlo over structural uncertainty:
+# Monte Carlo over structural uncertainty:
 #   - supply curvature beta (controls how marginal price moves with quantity) for a full re-clear
 #   - VRR geometry offsets (the counterfactual moves along the sloped VRR segment)
 #   - 2025/26 NetCONE (unknown) and LDA-premium attribution
 # We re-clear each sample: demand = piecewise-linear VRR (passes through observed clearing);
 # supply = Pmarg*exp(beta*(Q/oblig-1)); counterfactual shifts RR left by dQ. Solve S=D by
-# vectorized bisection on GPU. Report posterior of the aggregate transfer share.
+# vectorized bisection. Report posterior of the aggregate transfer share.
 # ---------------------------------------------------------------------------
 def vrr_price(Q, RR, netcone, a1,a2,a3, capmult):
     # piecewise-linear decreasing VRR in $/MW-day. Points:
@@ -118,7 +118,7 @@ def clear(RR, netcone, a1,a2,a3, capmult, oblig, Pmarg, beta):
     return Qc, Pc
 
 def mc(N=8_000_000):
-    """Correct, GPU-vectorized MC of the REAL uncertainties in the transfer decomposition:
+    """Correct, vectorized Monte Carlo of the uncertainties in the transfer decomposition:
        (i) IMM counterfactual (delta) precision; (ii) for 2025/26, the price basis between the
        marginal cleared price and the revenue-average (the LDA-premium / avg-vs-marginal ambiguity).
        For the two cap auctions the price is uniform, so the transfer is exact up to delta precision."""
@@ -144,7 +144,7 @@ def mc(N=8_000_000):
     share=100*agg_t/agg_d
     return share.detach().cpu().numpy(), agg_t.detach().cpu().numpy(), agg_d, per
 
-print("\n=== GPU Monte-Carlo structural re-clear (this exercises the GPU) ===")
+print("\n=== Monte Carlo structural re-clear ===")
 share,tdollar,agg_d,per=mc()
 res=dict(
   point_transfer_share_pct=round(100*tot_t/tot_d,1),

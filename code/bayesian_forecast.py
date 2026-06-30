@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-R167 Phase 5 (partial) — Bayesian hierarchical model of the PJM data-centre forecast RATCHET.
+Bayesian hierarchical model of the PJM data-centre forecast ratchet.
 Replaces the descriptive "10/12 upward" with a fitted posterior of the per-vintage upward drift.
 
 Data: IMM Table 5 — above-embedded adjustment (MW) for each TARGET year as forecast in successive

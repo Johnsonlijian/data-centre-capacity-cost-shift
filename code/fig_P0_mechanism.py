@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Figure 1: forecast admissibility gate — mechanism diagram.
-Re-written R163+ for clean NE submission: no text overflow, no clipping artefacts.
+Rewritten for clean Nature Energy submission: no text overflow, no clipping artefacts.
 Output: Figure_1.pdf/.png/.svg
 """
 from __future__ import annotations
@@ -192,9 +192,9 @@ ax.text(ANN_X, yC + 0.100,
         ha="left", va="center", fontsize=7.4, fontweight="bold",
         color=INK, transform=ax.transAxes, clip_on=False)
 AXES_ITEMS = [
-    ("§3.1 Who pays?",         "Concentrated cause, socialized burden"),
-    ("§3.2 Whether appears?",  "Ratchet upward, no clawback"),
-    ("§3.3 What kind of cost?","~84% inframarginal transfer"),
+    ("Causation and burden",   "Concentrated cause, socialized burden"),
+    ("Materialization risk",   "Ratchet upward, no clawback"),
+    ("Price amplification",    "~84% inframarginal transfer"),
 ]
 for i, (sec, desc) in enumerate(AXES_ITEMS):
     yi = yC + 0.045 - i * 0.060

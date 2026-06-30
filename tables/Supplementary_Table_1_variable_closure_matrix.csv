@@ -1,4 +1,4 @@
-chain_link,identification_status,evidence_source,allowed_wording,forbidden_wording
+chain_link,identification_status,evidence_source,admissible_claim_scope,excluded_claim_scope
 Speculative request stock,closed,"DOM queue ~70,000 MW; ~3x DOM peak (SCC PUR-2026-00011 p.7)","pre-gate speculative/contingent stock",firm committed demand
 Forecast admissibility screen (firmness/derate/ramp/duplication),closed,"PJM LLA Summary p.4; Load Forecast Supplement p.23; CIFP exec p.1-3","gate screening parameters",approved retail screen
 Admitted firm forecast increment (per zone),closed,"PJM Table B-9b (total large-load adj by zone/RTO 2026-2046)","admitted firm forecast / large-load adjustment",data-centre-only metered load

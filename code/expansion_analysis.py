@@ -1,5 +1,5 @@
 ﻿#!/usr/bin/env python3
-"""R161 expansion: (1) placebo (ordinary vs data-centre load concentration),
+"""Expansion analysis: (1) placebo (ordinary vs data-centre load concentration),
 (2) concentration index HHI, (3) bounded inter-zonal cross-subsidy interval.
 All wholesale/zonal; no household claim. Inputs: official PJM Table B-9b + 2026 Load Report."""
 import csv, os

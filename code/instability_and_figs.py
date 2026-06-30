@@ -2,7 +2,7 @@
 """Forecast-vintage instability (IMM Table 5) + two new figures:
  Fig A: cross-zonal causation vs burden scatter (all PJM zones)
  Fig B: forecast escalation of the data-centre adjustment across vintages
-Outputs to the R160 figures dir.
+Outputs diagnostic cross-zonal and forecast-instability figures.
 """
 import csv, os
 import matplotlib.pyplot as plt
@@ -73,9 +73,9 @@ ax.set_xlim(0,mx); ax.set_ylim(0,mx)
 ax.grid(color=C["grid"],alpha=0.6); ax.spines[["top","right"]].set_visible(False)
 ax.text(0.98,0.02,"DOM 61.6% cause / 16.1% pay (3.8x); 20 of 22 zones pay more than they cause.\nBubble area ∝ zone adjustment MW. Source: PJM Table B-9b + 2026 Load Report.",
         transform=ax.transAxes,ha="right",va="bottom",fontsize=7,color=C["muted"])
-fig.savefig(os.path.join(OUT,"Figure_A_crosszonal_causation_burden_R160.png"),bbox_inches="tight",facecolor="white")
-fig.savefig(os.path.join(OUT,"Figure_A_crosszonal_causation_burden_R160.pdf"),bbox_inches="tight",facecolor="white")
-fig.savefig(os.path.join(OUT,"Figure_A_crosszonal_causation_burden_R160.svg"),bbox_inches="tight",facecolor="white")
+fig.savefig(os.path.join(OUT,"Figure_A_crosszonal_causation_burden.png"),bbox_inches="tight",facecolor="white")
+fig.savefig(os.path.join(OUT,"Figure_A_crosszonal_causation_burden.pdf"),bbox_inches="tight",facecolor="white")
+fig.savefig(os.path.join(OUT,"Figure_A_crosszonal_causation_burden.svg"),bbox_inches="tight",facecolor="white")
 plt.close(fig)
 
 # ============ FIGURE B: forecast escalation ============
@@ -100,8 +100,8 @@ ax2.set_ylabel("Upward revision of the data-centre\nadjustment, 2023→2025 vint
 ax2.set_title("b  Revised by tens of % before the auction commits it",fontsize=10.0,fontweight="bold",color=C["ink"])
 ax2.set_ylim(0,75); ax2.grid(axis="y",color=C["grid"],alpha=0.6); ax2.spines[["top","right"]].set_visible(False)
 ax2.text(0.5,-0.22,"The 3-year-forward capacity commitment is locked against a non-stationary forecast.\nSource: IMM Table 5 (above-embedded vintages).",transform=ax2.transAxes,ha="center",va="top",fontsize=7.4,color=C["muted"])
-fig.savefig(os.path.join(OUT,"Figure_B_forecast_instability_R160.png"),bbox_inches="tight",facecolor="white")
-fig.savefig(os.path.join(OUT,"Figure_B_forecast_instability_R160.pdf"),bbox_inches="tight",facecolor="white")
-fig.savefig(os.path.join(OUT,"Figure_B_forecast_instability_R160.svg"),bbox_inches="tight",facecolor="white")
+fig.savefig(os.path.join(OUT,"Figure_B_forecast_instability.png"),bbox_inches="tight",facecolor="white")
+fig.savefig(os.path.join(OUT,"Figure_B_forecast_instability.pdf"),bbox_inches="tight",facecolor="white")
+fig.savefig(os.path.join(OUT,"Figure_B_forecast_instability.svg"),bbox_inches="tight",facecolor="white")
 plt.close(fig)
 print("\nWrote Figure A (cross-zonal) and Figure B (instability) to", OUT)

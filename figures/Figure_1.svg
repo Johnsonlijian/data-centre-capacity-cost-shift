@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-06-30T16:15:10.164267</dc:date>
+    <dc:date>2026-06-30T23:15:11.156487</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -241,19 +241,19 @@ z
     <text style="font-weight: 700; font-size: 7.4px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #1a2332" x="807.78983" y="133.058641" transform="rotate(-0 807.78983 133.058641)">Three measurement axes:</text>
    </g>
    <g id="text_23">
-    <text style="font-weight: 700; font-size: 7.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #2f5e8a" x="807.78983" y="155.831062" transform="rotate(-0 807.78983 155.831062)">§3.1 Who pays?</text>
+    <text style="font-weight: 700; font-size: 7.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #2f5e8a" x="807.78983" y="155.783812" transform="rotate(-0 807.78983 155.783812)">Causation and burden</text>
    </g>
    <g id="text_24">
     <text style="font-size: 6.5px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #5a6b7b" x="807.78983" y="166.081523" transform="rotate(-0 807.78983 166.081523)">Concentrated cause, socialized burden</text>
    </g>
    <g id="text_25">
-    <text style="font-weight: 700; font-size: 7.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #2f5e8a" x="807.78983" y="180.671063" transform="rotate(-0 807.78983 180.671063)">§3.2 Whether appears?</text>
+    <text style="font-weight: 700; font-size: 7.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #2f5e8a" x="807.78983" y="180.623812" transform="rotate(-0 807.78983 180.623812)">Materialization risk</text>
    </g>
    <g id="text_26">
     <text style="font-size: 6.5px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #5a6b7b" x="807.78983" y="190.921523" transform="rotate(-0 807.78983 190.921523)">Ratchet upward, no clawback</text>
    </g>
    <g id="text_27">
-    <text style="font-weight: 700; font-size: 7.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #2f5e8a" x="807.78983" y="205.513312" transform="rotate(-0 807.78983 205.513312)">§3.3 What kind of cost?</text>
+    <text style="font-weight: 700; font-size: 7.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #2f5e8a" x="807.78983" y="205.520062" transform="rotate(-0 807.78983 205.520062)">Price amplification</text>
    </g>
    <g id="text_28">
     <text style="font-size: 6.5px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #5a6b7b" x="807.78983" y="215.75543" transform="rotate(-0 807.78983 215.75543)">~84% inframarginal transfer</text>

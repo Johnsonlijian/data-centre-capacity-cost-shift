@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-R167 Phase 3 — Inverse-supply (price-amplification) elasticity, identified honestly.
+Inverse-supply (price-amplification) elasticity, identified from the below-cap auction.
 
 The 21-year BRA panel (agent-sourced) is used for CONTEXT (the price surge / scarcity regime), not
 for a pooled supply regression: a 2025/26 methodology break (marginal-ELCC), FRR participation, and
