@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Figure 4: price-amplification transfer — structural decomposition + Monte Carlo robustness.
 Panel (a): stacked $B bars by delivery year (resource cost teal | transfer amber), with
-3-auction total. Panel (b): Monte Carlo posterior of transfer share, with 4-method band.
+3-auction total. Panel (b): Monte Carlo posterior of transfer share, with sensitivity band.
 """
 import os, json
 import numpy as np
@@ -139,7 +139,7 @@ if os.path.exists(mc_path) and os.path.exists(j_path):
 
     axR.axvspan(lo, hi,  color=TEAL,  alpha=0.13, label=f"90% CI [{lo:.0f}, {hi:.0f}]%")
     axR.axvline(med,     color=INK,   lw=2.0, zorder=5, label=f"median {med:.0f}%")
-    axR.axvspan(81, 90,  color=AMBER, alpha=0.20, label="4-method band 81–90%")
+    axR.axvspan(78, 90,  color=AMBER, alpha=0.20, label="sensitivity range 78–90%")
 
     axR.set_xlabel("inframarginal-transfer share (%)", fontsize=9)
     axR.set_ylabel("posterior density", fontsize=9)
@@ -157,7 +157,8 @@ fig.suptitle(
     "~84% of the USD 21.26B capacity-market effect is a wealth transfer to incumbents, not a cost of service",
     fontsize=10.8, fontweight="bold", y=0.97)
 
-fig.savefig(os.path.join(OUT, "Figure_4.pdf"), bbox_inches="tight")
-fig.savefig(os.path.join(OUT, "Figure_4.png"), bbox_inches="tight", dpi=180)
-fig.savefig(os.path.join(OUT, "Figure_4.svg"), bbox_inches="tight")
-print("wrote Figure_4")
+name = "Figure_6_price_amplification_R160" if "review_packages" in HERE else "Figure_4"
+fig.savefig(os.path.join(OUT, f"{name}.pdf"), bbox_inches="tight")
+fig.savefig(os.path.join(OUT, f"{name}.png"), bbox_inches="tight", dpi=180)
+fig.savefig(os.path.join(OUT, f"{name}.svg"), bbox_inches="tight")
+print("wrote", name)

@@ -1,6 +1,6 @@
 m,sloped,recovery,price,unit,netcone,fx,dc_share_pct,dc_growth,src,price_usd_kwyr,price_over_netcone
 PJM (this paper),True,socialized,329.17,$/MW-day,188.1,1.0,,hyper-concentrated (2 zones=85% of adj.),this paper; pjm.com BRA reports,120.1,1.75
-MISO,True,LOCATIONAL,217.0,$/MW-day (annualized N/C),218.6,1.0,20.0,peak +35% to ~163 GW by 2035; DC ~20% by 2030,rtoinsider 130187; misoenergy RBDC,79.2,0.99
+MISO,True,seasonal,217.0,$/MW-day (annualized N/C),218.6,1.0,,summer uniform across all 10 zones; constrained fall price-separates; DC growth concentrated in LRZ 1/6/9,MISO Dec-2024 LTLF; MISO 2025/26 PRA results,79.2,0.99
 ISO-NE,True,socialized,42.96,$/kW-yr (FCA18),108.93599999999999,1.0,,minimal; electrification-led (~285 MW DC in study),iso-ne FCA18 results,43.0,0.39
 GB (T-4 2029/30),True,socialized,27.1,GBP/kW-yr,49.0,1.27,,~20 TWh by 2030 (FES 2025); 72.8 GW connection requests,neso.energy; gov.uk CM parameters 2026,34.4,0.55
 Ireland/SEM (2029/30),True,socialized,135.5,EUR/kW-yr,,1.08,22.0,EXTREME: DC=22% of national metered electricity 2024 (CSO); ~31% by 2034; EirGrid connection moratorium,sem-o PCAR2930; cso.ie 2024,146.3,

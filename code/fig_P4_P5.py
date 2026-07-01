@@ -1,16 +1,13 @@
 # -*- coding: utf-8 -*-
-"""Figures: P4 multi-market generality; P5 Bayesian ratchet posterior."""
-import os, json
+"""Figure 5: cross-market preconditions; Supplementary Figure S2 sensitivity."""
+import os
 import csv
 import numpy as np
 import matplotlib as mpl; mpl.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.patches import FancyBboxPatch
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-# Write figures to ../figures/ when run from the code/ folder; else write alongside this script
-_fig_dir = os.path.join(HERE, "..", "figures")
-OUT  = _fig_dir if os.path.isdir(_fig_dir) else HERE
+OUT = os.path.join(HERE, "..", "figures") if os.path.isdir(os.path.join(HERE, "..", "figures")) else HERE
 
 mpl.rcParams.update({
     "font.family": "serif",
@@ -22,21 +19,17 @@ mpl.rcParams.update({
     "pdf.fonttype": 42,
     "svg.fonttype": "none",
 })
-TEAL  = "#2a7f7f"
+
+TEAL = "#2a7f7f"
 AMBER = "#d98a3d"
-GREY  = "#9aa0a6"
-INK   = "#222222"
-RED   = "#b3402e"
-BLUE  = "#34618f"
-WHITE = "#ffffff"
+GREY = "#7d858c"
+INK = "#222222"
+RED = "#b3402e"
+BLUE = "#34618f"
+VIOLET = "#6b5b95"
 
-# ── P4 six-market generality ─────────────────────────────────────────────────
 rows = list(csv.DictReader(open(os.path.join(HERE, "P4_markets.csv"), encoding="utf-8")))
-def f(x):
-    try: return float(x)
-    except: return np.nan
 
-# Display order: bottom-to-top (ERCOT/MISO are controls; Ireland is extreme)
 ORDER = [
     "ERCOT",
     "MISO",
@@ -48,132 +41,141 @@ ORDER = [
 ]
 rows = sorted(rows, key=lambda r: ORDER.index(r["m"]) if r["m"] in ORDER else 99)
 
-# Gate description for each market
 GATE = {
-    "PJM (this paper)":       "firm forecast gate\n(CIFP, 70% derate, 3-yr fwd)",
-    "MISO":                   "41% attrition screen\n(LTLF attrition model)",
-    "ISO-NE":                 "gate forming\n(inaugural LLF, 2026)",
-    "GB (T-4 2029/30)":       "prequalification\n(T-4 Capacity Market rules)",
-    "Ireland/SEM (2029/30)":  "connection mandate\n(mandatory agreement)",
-    "Italy (Terna, DY2027)":  "feasibility screen\n(Terna prequalification)",
-    "ERCOT":                  "no capacity obligation\n(energy-only; locational energy costs)",
+    "PJM (this paper)": "firm forecast gate\n(CIFP, 70% derate)",
+    "MISO": "41% attrition screen\n(LTLF model)",
+    "ISO-NE": "gate forming\n(large-load forecast)",
+    "GB (T-4 2029/30)": "prequalification\n(T-4 rules)",
+    "Ireland/SEM (2029/30)": "connection mandate\n(capacity agreement)",
+    "Italy (Terna, DY2027)": "feasibility screen\n(prequalification)",
+    "ERCOT": "no capacity obligation\n(energy-only)",
 }
 
-fig, ax = plt.subplots(figsize=(9.4, 5.4))
-fig.subplots_adjust(left=0.02, right=0.98, top=0.90, bottom=0.10)
+def f(x):
+    try:
+        return float(x)
+    except Exception:
+        return np.nan
+
+fig, ax = plt.subplots(figsize=(9.4, 5.65))
+fig.subplots_adjust(left=0.02, right=0.98, top=0.89, bottom=0.12)
 
 N = len(rows)
-BAR_H = 0.74
-
 for i, r in enumerate(rows):
-    soc        = r["recovery"] == "socialized"
-    energy_only = r["recovery"].lower() == "energy-only"
-    bg  = AMBER if soc else ("#c8e0e0" if not energy_only else "#dce4e8")
-    ax.barh(i, 1, color=bg, alpha=0.55, height=BAR_H, left=0)
+    recovery = r["recovery"].strip().lower()
+    socialized = recovery == "socialized"
+    seasonal = recovery == "seasonal"
+    energy_only = recovery == "energy-only"
+    if socialized:
+        bg = AMBER
+    elif seasonal:
+        bg = VIOLET
+    elif energy_only:
+        bg = "#dce4e8"
+    else:
+        bg = "#c8e0e0"
+    ax.barh(i, 1, color=bg, alpha=0.50, height=0.74, left=0)
 
-    # Market name — left
     mname = r["m"].replace(" (this paper)", "").replace("(Terna, DY2027)", "(Terna)")
-    ax.text(0.01, i, mname,
-            va="center", ha="left",
+    ax.text(0.01, i, mname, va="center", ha="left",
             fontsize=9.6, fontweight="bold", color=INK)
 
-    # Gate description — left-centre column
-    gate_txt = GATE.get(r["m"], "")
-    ax.text(0.32, i, gate_txt,
-            va="center", ha="left",
-            fontsize=7.4, color=GREY, style="italic",
-            multialignment="left", linespacing=1.3)
+    ax.text(0.31, i, GATE.get(r["m"], ""), va="center", ha="left",
+            fontsize=8.2, color=GREY, multialignment="left", linespacing=1.25)
 
-    # DC share label — centre
     dc = f(r["dc_share_pct"])
     if not np.isnan(dc):
-        yr_note = {"MISO": "(proj. 2030)",
-                   "Italy (Terna, DY2027)": "(proj. 2030)"}.get(r["m"], "")
-        yr_note2 = {"Ireland/SEM (2029/30)": "(2024, CSO)"}.get(r["m"], yr_note)
-        demand_label = {"Ireland/SEM (2029/30)": "of national metered electricity"}.get(r["m"], "of demand")
-        ax.text(0.61, i + 0.20,
-                f"data centres {dc:.0f}% {demand_label} {yr_note2}",
-                va="center", ha="left",
-                fontsize=7.5, color=RED)
+        demand_label = "national metered electricity" if "Ireland" in r["m"] else "demand"
+        note = "(2024, CSO)" if "Ireland" in r["m"] else "(2030 projection)"
+        ax.text(0.60, i + 0.17, f"data centres {dc:.0f}% of {demand_label} {note}",
+                va="center", ha="left", fontsize=8.1, color=RED)
 
-    # Recovery + mechanism tag — right
-    if soc:
-        tag      = "SOCIALIZED"
-        sub      = "mechanism ON"
-        tag_col  = "#7a4a13"
-        sub_col  = AMBER
+    if socialized:
+        tag = "SOCIALIZED"
+        sub = "preconditions present"
+        tag_col = "#7a4a13"
+        sub_col = AMBER
+    elif seasonal:
+        tag = "SEASONAL"
+        sub = "summer socialized; fall local"
+        tag_col = VIOLET
+        sub_col = VIOLET
     elif energy_only:
-        tag      = "ENERGY-ONLY"
-        sub      = "no capacity market (negative control)"
-        tag_col  = BLUE
-        sub_col  = BLUE
+        tag = "ENERGY-ONLY"
+        sub = "negative control"
+        tag_col = BLUE
+        sub_col = BLUE
     else:
-        tag      = "LOCATIONAL"
-        sub      = "mechanism OFF (boundary condition)"
-        tag_col  = TEAL
-        sub_col  = TEAL
+        tag = "LOCATIONAL"
+        sub = "boundary condition"
+        tag_col = TEAL
+        sub_col = TEAL
 
-    ax.text(0.98, i + 0.14, tag,
-            va="center", ha="right",
-            fontsize=8.8, fontweight="bold", color=tag_col)
-    ax.text(0.98, i - 0.18, sub,
-            va="center", ha="right",
-            fontsize=7.2, color=sub_col, style="italic")
+    ax.text(0.98, i + 0.14, tag, va="center", ha="right",
+            fontsize=8.9, fontweight="bold", color=tag_col)
+    ax.text(0.98, i - 0.18, sub, va="center", ha="right",
+            fontsize=7.9, color=sub_col)
 
-# Axes cosmetics
 ax.set_yticks([])
 ax.set_xticks([])
 ax.set_xlim(0, 1)
-ax.set_ylim(-0.55, N + 0.15)   # extra headroom above top row for column headers
-
-# Column header labels — in axes fraction; sit above all bars with clear separation
-ax.text(0.01, 0.975, "Market",             fontsize=8.0, color=GREY, fontweight="bold",
+ax.set_ylim(-0.55, N + 0.15)
+ax.text(0.01, 0.975, "Market", fontsize=8.2, color=GREY, fontweight="bold",
         transform=ax.transAxes, va="top")
-ax.text(0.32, 0.975, "Admissibility gate", fontsize=8.0, color=GREY, fontweight="bold",
+ax.text(0.31, 0.975, "Admissibility gate", fontsize=8.2, color=GREY, fontweight="bold",
         transform=ax.transAxes, va="top")
-ax.text(0.98, 0.975, "Cost recovery",      fontsize=8.0, color=GREY, fontweight="bold",
+ax.text(0.98, 0.975, "Recovery basis", fontsize=8.2, color=GREY, fontweight="bold",
         ha="right", transform=ax.transAxes, va="top")
-
-# Divider line below headers, above Ireland bar — in data coords
-ax.axhline(N - 0.40, color=GREY, lw=0.5, ls="-", alpha=0.5)
-
+ax.axhline(N - 0.40, color=GREY, lw=0.5, alpha=0.5)
 ax.set_title(
-    "The concentration-socialization mechanism recurs across six capacity markets; ERCOT (energy-only) is the negative control",
+    "Preconditions and boundary conditions across capacity markets; ERCOT is the negative control",
     loc="left", fontsize=10.0, fontweight="bold")
-
-# Footer note — y in axes fraction; keep small so bbox_inches="tight" doesn't add blank space
-ax.text(0.5, -0.04,
-        "All six capacity markets use sloped administrative demand curves. Recovery basis drives mechanism presence; "
-        "MISO localizes (boundary condition); ERCOT energy-only is the negative control. Price levels not equated (Methods).",
-        ha="center", va="top", fontsize=7.5, style="italic",
+ax.text(0.5, -0.055,
+        "PJM is quantified. MISO is the seasonal boundary test: uniform summer clearing supports the mechanism, "
+        "while constrained fall clearing localizes it. Other markets are precondition checks.",
+        ha="center", va="top", fontsize=7.7, color=GREY,
         transform=ax.get_xaxis_transform())
 
-fig.savefig(os.path.join(OUT, "Figure_5.pdf"), bbox_inches="tight")
-fig.savefig(os.path.join(OUT, "Figure_5.png"), bbox_inches="tight", dpi=180)
-fig.savefig(os.path.join(OUT, "Figure_5.svg"), bbox_inches="tight")
+fig5_name = "Figure_5_two_market_generality_R160" if "review_packages" in HERE else "Figure_5"
+fig.savefig(os.path.join(OUT, f"{fig5_name}.pdf"), bbox_inches="tight")
+fig.savefig(os.path.join(OUT, f"{fig5_name}.png"), bbox_inches="tight", dpi=180)
+fig.savefig(os.path.join(OUT, f"{fig5_name}.svg"), bbox_inches="tight")
 plt.close(fig)
-print("wrote Figure_5")
+print("wrote", fig5_name)
 
-# ── P5 Bayesian ratchet ────────────────────────────────────────────────────────
-d = np.load(os.path.join(HERE, "P5_drift_pct.npy"))
-j = json.load(open(os.path.join(HERE, "P5_bayes_ratchet.json")))
-med = j["drift_pct_per_vintage_median"]
-lo, hi = j["drift_pct_per_vintage_CI95"]
-P = j["P_drift_gt_0"]
+# Supplementary Figure S2: comparable forecast-revision sensitivity.
+revisions = np.array([-21.5, 0.4, -23.2, 14.6, 11.9, 21.3, 35.8])
+labels = ["2024\n23->24", "2025\n23->24", "2025\n24->25",
+          "2026\n23->24", "2026\n24->25", "2027\n23->24", "2027\n24->25"]
+colors = [TEAL if v >= 0 else GREY for v in revisions]
 
-fig, ax = plt.subplots(figsize=(6.6, 3.9))
-ax.hist(d, bins=80, color=BLUE, alpha=0.55, density=True, ec="white", lw=0.2)
-ax.axvspan(lo, hi, color=BLUE, alpha=0.12, label=f"95% CrI [{lo:.0f}, {hi:.0f}]%")
-ax.axvline(med, color=INK, lw=1.6, label=f"median {med:.0f}%/vintage")
-ax.axvline(0, color=RED, lw=1.2, ls="--",
-           label=f"no drift (P[drift>0]={P:.3f})")
-ax.set_xlabel("fitted upward drift of the data-centre forecast (% per vintage)")
-ax.set_ylabel("posterior density")
-ax.set_title("Bayesian ratchet: the forecast drifts up +23%/vintage (P=0.998)",
-             loc="left", fontsize=10)
-ax.legend(frameon=False, fontsize=8)
-fig.savefig(os.path.join(OUT, "Supplementary_Figure_S2.pdf"), bbox_inches="tight")
-fig.savefig(os.path.join(OUT, "Supplementary_Figure_S2.png"), bbox_inches="tight", dpi=180)
-fig.savefig(os.path.join(OUT, "Supplementary_Figure_S2.svg"), bbox_inches="tight")
+fig, ax = plt.subplots(figsize=(7.2, 3.9))
+fig.subplots_adjust(left=0.10, right=0.97, top=0.82, bottom=0.24)
+ax.bar(range(len(revisions)), revisions, color=colors, edgecolor=INK, lw=0.45, alpha=0.85)
+ax.axhline(0, color=INK, lw=0.8)
+ax.axhline(np.mean(revisions), color=AMBER, lw=1.2, ls="--",
+           label=f"mean {np.mean(revisions):+.1f}%")
+ax.axhline(np.median(revisions), color=BLUE, lw=1.2, ls=":",
+           label=f"median {np.median(revisions):+.1f}%")
+for i, v in enumerate(revisions):
+    va = "bottom" if v >= 0 else "top"
+    y = v + (1.2 if v >= 0 else -1.2)
+    ax.text(i, y, f"{v:+.1f}%", ha="center", va=va, fontsize=7.8, color=INK)
+ax.set_xticks(range(len(labels)))
+ax.set_xticklabels(labels, fontsize=8)
+ax.set_ylabel("Revision (%)")
+ax.set_title("Comparable forecast revisions show material non-stationarity, not a significant ratchet",
+             loc="left", fontsize=10, fontweight="bold")
+ax.text(0.5, -0.30,
+        "Comparable 2023-2025 above-embedded vintages only; 2022 total-adjustment vintage excluded from inference. "
+        "Five of seven revisions are upward (one-sided sign test p=0.23).",
+        transform=ax.transAxes, ha="center", va="top", fontsize=7.7, color=GREY)
+ax.legend(frameon=False, fontsize=8, loc="upper left")
+ax.grid(axis="y", color="#e0e0e0", alpha=0.6, lw=0.5)
+
+s2_name = "Supplementary_Figure_S2_bayes_ratchet" if "review_packages" in HERE else "Supplementary_Figure_S2"
+fig.savefig(os.path.join(OUT, f"{s2_name}.pdf"), bbox_inches="tight")
+fig.savefig(os.path.join(OUT, f"{s2_name}.png"), bbox_inches="tight", dpi=180)
+fig.savefig(os.path.join(OUT, f"{s2_name}.svg"), bbox_inches="tight")
 plt.close(fig)
-print("wrote Supplementary_Figure_S2")
+print("wrote", s2_name)

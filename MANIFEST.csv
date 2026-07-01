@@ -7,7 +7,6 @@ REPRODUCIBLE_RUNBOOK.md,runbook,public
 requirements.txt,environment,public
 scripts/reproduce_results.py,smoke_test_code,public
 code/amplification.py,analysis_code,public
-code/bayesian_forecast.py,analysis_code,public
 code/crosszonal_analysis.py,analysis_code,public
 code/expansion_analysis.py,analysis_code,public
 code/fig_P0_mechanism.py,figure_code,public

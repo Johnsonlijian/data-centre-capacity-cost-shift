@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="705.561328pt" height="357.485897pt" viewBox="0 0 705.561328 357.485897" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="664.128pt" height="364.650308pt" viewBox="0 0 664.128 364.650308" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-06-30T16:23:04.380170</dc:date>
+    <dc:date>2026-07-01T09:58:49.551498</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -21,215 +21,212 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 357.485897 
-L 705.561328 357.485897 
-L 705.561328 0 
+   <path d="M 0 364.650308 
+L 664.128 364.650308 
+L 664.128 0 
 L 0 0 
 z
 " style="fill: #ffffff"/>
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 27.916664 331.018125 
-L 677.644664 331.018125 
-L 677.644664 19.978125 
-L 27.916664 19.978125 
+    <path d="M 7.2 333.214125 
+L 656.928 333.214125 
+L 656.928 19.978125 
+L 7.2 19.978125 
 z
 " style="fill: #ffffff"/>
    </g>
    <g id="patch_3">
-    <path d="M 27.916664 323.74706 
-L 677.644664 323.74706 
-L 677.644664 293.854904 
-L 27.916664 293.854904 
+    <path d="M 7.2 325.891725 
+L 656.928 325.891725 
+L 656.928 295.788525 
+L 7.2 295.788525 
 z
-" clip-path="url(#p626cb24bb6)" style="fill: #dce4e8; opacity: 0.55"/>
+" clip-path="url(#p51c20fb67c)" style="fill: #dce4e8; opacity: 0.5"/>
    </g>
    <g id="patch_4">
-    <path d="M 27.916664 283.352255 
-L 677.644664 283.352255 
-L 677.644664 253.460099 
-L 27.916664 253.460099 
+    <path d="M 7.2 285.211725 
+L 656.928 285.211725 
+L 656.928 255.108525 
+L 7.2 255.108525 
 z
-" clip-path="url(#p626cb24bb6)" style="fill: #c8e0e0; opacity: 0.55"/>
+" clip-path="url(#p51c20fb67c)" style="fill: #6b5b95; opacity: 0.5"/>
    </g>
    <g id="patch_5">
-    <path d="M 27.916664 242.95745 
-L 677.644664 242.95745 
-L 677.644664 213.065294 
-L 27.916664 213.065294 
+    <path d="M 7.2 244.531725 
+L 656.928 244.531725 
+L 656.928 214.428525 
+L 7.2 214.428525 
 z
-" clip-path="url(#p626cb24bb6)" style="fill: #d98a3d; opacity: 0.55"/>
+" clip-path="url(#p51c20fb67c)" style="fill: #d98a3d; opacity: 0.5"/>
    </g>
    <g id="patch_6">
-    <path d="M 27.916664 202.562644 
-L 677.644664 202.562644 
-L 677.644664 172.670489 
-L 27.916664 172.670489 
+    <path d="M 7.2 203.851725 
+L 656.928 203.851725 
+L 656.928 173.748525 
+L 7.2 173.748525 
 z
-" clip-path="url(#p626cb24bb6)" style="fill: #d98a3d; opacity: 0.55"/>
+" clip-path="url(#p51c20fb67c)" style="fill: #d98a3d; opacity: 0.5"/>
    </g>
    <g id="patch_7">
-    <path d="M 27.916664 162.167839 
-L 677.644664 162.167839 
-L 677.644664 132.275683 
-L 27.916664 132.275683 
+    <path d="M 7.2 163.171725 
+L 656.928 163.171725 
+L 656.928 133.068525 
+L 7.2 133.068525 
 z
-" clip-path="url(#p626cb24bb6)" style="fill: #d98a3d; opacity: 0.55"/>
+" clip-path="url(#p51c20fb67c)" style="fill: #d98a3d; opacity: 0.5"/>
    </g>
    <g id="patch_8">
-    <path d="M 27.916664 121.773034 
-L 677.644664 121.773034 
-L 677.644664 91.880878 
-L 27.916664 91.880878 
+    <path d="M 7.2 122.491725 
+L 656.928 122.491725 
+L 656.928 92.388525 
+L 7.2 92.388525 
 z
-" clip-path="url(#p626cb24bb6)" style="fill: #d98a3d; opacity: 0.55"/>
+" clip-path="url(#p51c20fb67c)" style="fill: #d98a3d; opacity: 0.5"/>
    </g>
    <g id="patch_9">
-    <path d="M 27.916664 81.378229 
-L 677.644664 81.378229 
-L 677.644664 51.486073 
-L 27.916664 51.486073 
+    <path d="M 7.2 81.811725 
+L 656.928 81.811725 
+L 656.928 51.708525 
+L 7.2 51.708525 
 z
-" clip-path="url(#p626cb24bb6)" style="fill: #d98a3d; opacity: 0.55"/>
+" clip-path="url(#p51c20fb67c)" style="fill: #d98a3d; opacity: 0.5"/>
    </g>
    <g id="matplotlib.axis_1"/>
    <g id="matplotlib.axis_2"/>
    <g id="line2d_1">
-    <path d="M 27.916664 42.195268 
-L 677.644664 42.195268 
-" clip-path="url(#p626cb24bb6)" style="fill: none; stroke: #9aa0a6; stroke-opacity: 0.5; stroke-width: 0.5; stroke-linecap: square"/>
+    <path d="M 7.2 42.352125 
+L 656.928 42.352125 
+" clip-path="url(#p51c20fb67c)" style="fill: none; stroke: #7d858c; stroke-opacity: 0.5; stroke-width: 0.5; stroke-linecap: square"/>
    </g>
    <g id="patch_10">
-    <path d="M 27.916664 331.018125 
-L 27.916664 19.978125 
+    <path d="M 7.2 333.214125 
+L 7.2 19.978125 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_11">
-    <path d="M 27.916664 331.018125 
-L 677.644664 331.018125 
+    <path d="M 7.2 333.214125 
+L 656.928 333.214125 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="text_1">
-    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #222222" x="34.413944" y="310.952732" transform="rotate(-0 34.413944 310.952732)">ERCOT</text>
+    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #222222" x="13.69728" y="312.991875" transform="rotate(-0 13.69728 312.991875)">ERCOT</text>
    </g>
    <g id="text_2">
-    <text style="font-style: italic; font-size: 7.4px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #9aa0a6" transform="translate(235.829624 306.433445)">no capacity obligation</text>
-    <text style="font-style: italic; font-size: 7.4px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #9aa0a6" transform="translate(235.829624 314.710113)">(energy-only; locational energy costs)</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #7d858c" transform="translate(208.61568 308.358984)">no capacity obligation</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #7d858c" transform="translate(208.61568 317.245734)">(energy-only)</text>
    </g>
    <g id="text_3">
-    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #34618f" x="664.650104" y="305.118147" transform="rotate(-0 664.650104 305.118147)">ENERGY-ONLY</text>
+    <text style="font-weight: 700; font-size: 8.9px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #34618f" x="643.93344" y="307.139777" transform="rotate(-0 643.93344 307.139777)">ENERGY-ONLY</text>
    </g>
    <g id="text_4">
-    <text style="font-style: italic; font-size: 7.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #34618f" x="664.650104" y="317.794985" transform="rotate(-0 664.650104 317.794985)">no capacity market (negative control)</text>
+    <text style="font-size: 7.9px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #34618f" x="643.93344" y="320.05297" transform="rotate(-0 643.93344 320.05297)">negative control</text>
    </g>
    <g id="text_5">
-    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #222222" x="34.413944" y="270.557927" transform="rotate(-0 34.413944 270.557927)">MISO</text>
+    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #222222" x="13.69728" y="272.311875" transform="rotate(-0 13.69728 272.311875)">MISO</text>
    </g>
    <g id="text_6">
-    <text style="font-style: italic; font-size: 7.4px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #9aa0a6" transform="translate(235.829624 266.052514)">41% attrition screen</text>
-    <text style="font-style: italic; font-size: 7.4px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #9aa0a6" transform="translate(235.829624 274.315308)">(LTLF attrition model)</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #7d858c" transform="translate(208.61568 267.694359)">41% attrition screen</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #7d858c" transform="translate(208.61568 276.565734)">(LTLF model)</text>
    </g>
    <g id="text_7">
-    <text style="font-size: 7.5px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #b3402e" x="424.250744" y="262.1237" transform="rotate(-0 424.250744 262.1237)">data centres 20% of demand (proj. 2030)</text>
+    <text style="font-weight: 700; font-size: 8.9px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #6b5b95" x="643.93344" y="266.459777" transform="rotate(-0 643.93344 266.459777)">SEASONAL</text>
    </g>
    <g id="text_8">
-    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #2a7f7f" x="664.650104" y="264.723342" transform="rotate(-0 664.650104 264.723342)">LOCATIONAL</text>
+    <text style="font-size: 7.9px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #6b5b95" x="643.93344" y="279.380377" transform="rotate(-0 643.93344 279.380377)">summer socialized; fall local</text>
    </g>
    <g id="text_9">
-    <text style="font-style: italic; font-size: 7.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #2a7f7f" x="664.650104" y="277.400179" transform="rotate(-0 664.650104 277.400179)">mechanism OFF (boundary condition)</text>
+    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #222222" x="13.69728" y="231.694875" transform="rotate(-0 13.69728 231.694875)">Italy (Terna)</text>
    </g>
    <g id="text_10">
-    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #222222" x="34.413944" y="230.226122" transform="rotate(-0 34.413944 230.226122)">Italy (Terna)</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #7d858c" transform="translate(208.61568 227.006672)">feasibility screen</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #7d858c" transform="translate(208.61568 235.893422)">(prequalification)</text>
    </g>
    <g id="text_11">
-    <text style="font-style: italic; font-size: 7.4px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #9aa0a6" transform="translate(235.829624 225.643834)">feasibility screen</text>
-    <text style="font-style: italic; font-size: 7.4px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #9aa0a6" transform="translate(235.829624 233.920503)">(Terna prequalification)</text>
+    <text style="font-size: 8.1px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #b3402e" x="397.0368" y="224.504728" transform="rotate(-0 397.0368 224.504728)">data centres 3% of demand (2030 projection)</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 7.5px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #b3402e" x="424.250744" y="221.728895" transform="rotate(-0 424.250744 221.728895)">data centres 3% of demand (proj. 2030)</text>
+    <text style="font-weight: 700; font-size: 8.9px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #7a4a13" x="643.93344" y="225.779777" transform="rotate(-0 643.93344 225.779777)">SOCIALIZED</text>
    </g>
    <g id="text_13">
-    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #7a4a13" x="664.650104" y="224.328537" transform="rotate(-0 664.650104 224.328537)">SOCIALIZED</text>
+    <text style="font-size: 7.9px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #d98a3d" x="643.93344" y="238.700377" transform="rotate(-0 643.93344 238.700377)">preconditions present</text>
    </g>
    <g id="text_14">
-    <text style="font-style: italic; font-size: 7.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #d98a3d" x="664.650104" y="237.012124" transform="rotate(-0 664.650104 237.012124)">mechanism ON</text>
+    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #222222" x="13.69728" y="190.951875" transform="rotate(-0 13.69728 190.951875)">ISO-NE</text>
    </g>
    <g id="text_15">
-    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #222222" x="34.413944" y="189.768317" transform="rotate(-0 34.413944 189.768317)">ISO-NE</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #7d858c" transform="translate(208.61568 186.318984)">gate forming</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #7d858c" transform="translate(208.61568 195.205734)">(large-load forecast)</text>
    </g>
    <g id="text_16">
-    <text style="font-style: italic; font-size: 7.4px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #9aa0a6" transform="translate(235.829624 185.249029)">gate forming</text>
-    <text style="font-style: italic; font-size: 7.4px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #9aa0a6" transform="translate(235.829624 193.525698)">(inaugural LLF, 2026)</text>
+    <text style="font-weight: 700; font-size: 8.9px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #7a4a13" x="643.93344" y="185.099777" transform="rotate(-0 643.93344 185.099777)">SOCIALIZED</text>
    </g>
    <g id="text_17">
-    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #7a4a13" x="664.650104" y="183.933731" transform="rotate(-0 664.650104 183.933731)">SOCIALIZED</text>
+    <text style="font-size: 7.9px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #d98a3d" x="643.93344" y="198.020377" transform="rotate(-0 643.93344 198.020377)">preconditions present</text>
    </g>
    <g id="text_18">
-    <text style="font-style: italic; font-size: 7.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #d98a3d" x="664.650104" y="196.617319" transform="rotate(-0 664.650104 196.617319)">mechanism ON</text>
+    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #222222" x="13.69728" y="150.280875" transform="rotate(-0 13.69728 150.280875)">GB (T-4 2029/30)</text>
    </g>
    <g id="text_19">
-    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #222222" x="34.413944" y="149.382511" transform="rotate(-0 34.413944 149.382511)">GB (T-4 2029/30)</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #7d858c" transform="translate(208.61568 145.654359)">prequalification</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #7d858c" transform="translate(208.61568 154.525734)">(T-4 rules)</text>
    </g>
    <g id="text_20">
-    <text style="font-style: italic; font-size: 7.4px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #9aa0a6" transform="translate(235.829624 144.854224)">prequalification</text>
-    <text style="font-style: italic; font-size: 7.4px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #9aa0a6" transform="translate(235.829624 153.130893)">(T-4 Capacity Market rules)</text>
+    <text style="font-weight: 700; font-size: 8.9px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #7a4a13" x="643.93344" y="144.419777" transform="rotate(-0 643.93344 144.419777)">SOCIALIZED</text>
    </g>
    <g id="text_21">
-    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #7a4a13" x="664.650104" y="143.538926" transform="rotate(-0 664.650104 143.538926)">SOCIALIZED</text>
+    <text style="font-size: 7.9px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #d98a3d" x="643.93344" y="157.340377" transform="rotate(-0 643.93344 157.340377)">preconditions present</text>
    </g>
    <g id="text_22">
-    <text style="font-style: italic; font-size: 7.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #d98a3d" x="664.650104" y="156.222514" transform="rotate(-0 664.650104 156.222514)">mechanism ON</text>
+    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #222222" x="13.69728" y="109.591875" transform="rotate(-0 13.69728 109.591875)">PJM</text>
    </g>
    <g id="text_23">
-    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #222222" x="34.413944" y="108.978706" transform="rotate(-0 34.413944 108.978706)">PJM</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #7d858c" transform="translate(208.61568 104.966672)">firm forecast gate</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #7d858c" transform="translate(208.61568 113.853422)">(CIFP, 70% derate)</text>
    </g>
    <g id="text_24">
-    <text style="font-style: italic; font-size: 7.4px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #9aa0a6" transform="translate(235.829624 104.459419)">firm forecast gate</text>
-    <text style="font-style: italic; font-size: 7.4px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #9aa0a6" transform="translate(235.829624 112.736087)">(CIFP, 70% derate, 3-yr fwd)</text>
+    <text style="font-weight: 700; font-size: 8.9px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #7a4a13" x="643.93344" y="103.739777" transform="rotate(-0 643.93344 103.739777)">SOCIALIZED</text>
    </g>
    <g id="text_25">
-    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #7a4a13" x="664.650104" y="103.144121" transform="rotate(-0 664.650104 103.144121)">SOCIALIZED</text>
+    <text style="font-size: 7.9px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #d98a3d" x="643.93344" y="116.660377" transform="rotate(-0 643.93344 116.660377)">preconditions present</text>
    </g>
    <g id="text_26">
-    <text style="font-style: italic; font-size: 7.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #d98a3d" x="664.650104" y="115.827709" transform="rotate(-0 664.650104 115.827709)">mechanism ON</text>
+    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #222222" x="13.69728" y="68.917875" transform="rotate(-0 13.69728 68.917875)">Ireland/SEM (2029/30)</text>
    </g>
    <g id="text_27">
-    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #222222" x="34.413944" y="68.589901" transform="rotate(-0 34.413944 68.589901)">Ireland/SEM (2029/30)</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #7d858c" transform="translate(208.61568 64.286672)">connection mandate</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #7d858c" transform="translate(208.61568 73.158047)">(capacity agreement)</text>
    </g>
    <g id="text_28">
-    <text style="font-style: italic; font-size: 7.4px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #9aa0a6" transform="translate(235.829624 64.071551)">connection mandate</text>
-    <text style="font-style: italic; font-size: 7.4px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #9aa0a6" transform="translate(235.829624 72.334345)">(mandatory agreement)</text>
+    <text style="font-size: 8.1px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #b3402e" x="397.0368" y="61.78283" transform="rotate(-0 397.0368 61.78283)">data centres 22% of national metered electricity (2024, CSO)</text>
    </g>
    <g id="text_29">
-    <text style="font-size: 7.5px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #b3402e" x="424.250744" y="60.147916" transform="rotate(-0 424.250744 60.147916)">data centres 22% of national metered electricity (2024, CSO)</text>
+    <text style="font-weight: 700; font-size: 8.9px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #7a4a13" x="643.93344" y="63.059777" transform="rotate(-0 643.93344 63.059777)">SOCIALIZED</text>
    </g>
    <g id="text_30">
-    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #7a4a13" x="664.650104" y="62.749316" transform="rotate(-0 664.650104 62.749316)">SOCIALIZED</text>
+    <text style="font-size: 7.9px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #d98a3d" x="643.93344" y="75.980377" transform="rotate(-0 643.93344 75.980377)">preconditions present</text>
    </g>
    <g id="text_31">
-    <text style="font-style: italic; font-size: 7.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #d98a3d" x="664.650104" y="75.432903" transform="rotate(-0 664.650104 75.432903)">mechanism ON</text>
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #7d858c" x="13.69728" y="33.238962" transform="rotate(-0 13.69728 33.238962)">Market</text>
    </g>
    <g id="text_32">
-    <text style="font-weight: 700; font-size: 8px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #9aa0a6" x="34.413944" y="33.051625" transform="rotate(-0 34.413944 33.051625)">Market</text>
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #7d858c" x="208.61568" y="33.367087" transform="rotate(-0 208.61568 33.367087)">Admissibility gate</text>
    </g>
    <g id="text_33">
-    <text style="font-weight: 700; font-size: 8px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #9aa0a6" x="235.829624" y="33.176625" transform="rotate(-0 235.829624 33.176625)">Admissibility gate</text>
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #7d858c" x="643.93344" y="33.367087" transform="rotate(-0 643.93344 33.367087)">Recovery basis</text>
    </g>
    <g id="text_34">
-    <text style="font-weight: 700; font-size: 8px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #9aa0a6" x="664.650104" y="33.171625" transform="rotate(-0 664.650104 33.171625)">Cost recovery</text>
+    <text style="font-size: 7.7px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle; fill: #7d858c" x="332.064" y="355.788792" transform="rotate(-0 332.064 355.788792)">PJM is quantified. MISO is the seasonal boundary test: uniform summer clearing supports the mechanism, while constrained fall clearing localizes it. Other markets are precondition checks.</text>
    </g>
    <g id="text_35">
-    <text style="font-style: italic; font-size: 7.5px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="352.780664" y="348.667537" transform="rotate(-0 352.780664 348.667537)">All six capacity markets use sloped administrative demand curves. Recovery basis drives mechanism presence; MISO localizes (boundary condition); ERCOT energy-only is the negative control. Price levels not equated (Methods).</text>
-   </g>
-   <g id="text_36">
-    <text style="font-weight: 700; font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start" x="27.916664" y="13.978125" transform="rotate(-0 27.916664 13.978125)">The concentration-socialization mechanism recurs across six capacity markets; ERCOT (energy-only) is the negative control</text>
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start" x="7.2" y="13.978125" transform="rotate(-0 7.2 13.978125)">Preconditions and boundary conditions across capacity markets; ERCOT is the negative control</text>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p626cb24bb6">
-   <rect x="27.916664" y="19.978125" width="649.728" height="311.04"/>
+  <clipPath id="p51c20fb67c">
+   <rect x="7.2" y="19.978125" width="649.728" height="313.236"/>
   </clipPath>
  </defs>
 </svg>

@@ -5,8 +5,8 @@ authors:
   - family-names: "REN"
     given-names: "Lijian"
     orcid: "https://orcid.org/0000-0003-1629-4368"
-version: "0.2.1"
-date-released: "2026-06-30"
+version: "0.2.3"
+date-released: "2026-07-01"
 repository-code: "https://github.com/Johnsonlijian/data-centre-capacity-cost-shift"
 license: "MIT AND CC-BY-4.0"
 keywords:
@@ -14,6 +14,6 @@ keywords:
   - capacity markets
   - PJM
   - cost allocation
-  - energy justice
+  - forecast governance
   - reproducibility
 abstract: "Author-created code, derived tables and generated figures supporting a public-record analysis of forecast data-centre load and socialized capacity-market costs."

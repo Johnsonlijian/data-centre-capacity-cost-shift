@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-06-30T23:15:11.156487</dc:date>
+    <dc:date>2026-07-01T10:14:10.210022</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -250,7 +250,7 @@ z
     <text style="font-weight: 700; font-size: 7.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #2f5e8a" x="807.78983" y="180.623812" transform="rotate(-0 807.78983 180.623812)">Materialization risk</text>
    </g>
    <g id="text_26">
-    <text style="font-size: 6.5px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #5a6b7b" x="807.78983" y="190.921523" transform="rotate(-0 807.78983 190.921523)">Ratchet upward, no clawback</text>
+    <text style="font-size: 6.5px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #5a6b7b" x="807.78983" y="190.91543" transform="rotate(-0 807.78983 190.91543)">Non-stationary forecast, no clawback</text>
    </g>
    <g id="text_27">
     <text style="font-weight: 700; font-size: 7.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #2f5e8a" x="807.78983" y="205.520062" transform="rotate(-0 807.78983 205.520062)">Price amplification</text>

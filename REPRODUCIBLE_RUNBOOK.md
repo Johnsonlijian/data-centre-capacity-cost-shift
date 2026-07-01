@@ -8,7 +8,7 @@ Tested with Python 3.12 on Windows. The smoke-test script uses relative paths on
 python -m pip install -r requirements.txt
 ```
 
-## Run
+## Smoke Test
 
 ```bash
 python scripts/reproduce_results.py
@@ -22,6 +22,8 @@ The command creates:
 - `outputs/claim_checks.csv`
 - `outputs/figures/rebuilt_crosszonal_causation_burden.png`
 - `outputs/figures/rebuilt_forecast_instability.png`
+
+The smoke test verifies selected derived quantities and rebuilds diagnostic plots. It is intentionally fast and does not rerun every analysis script.
 
 ## Regenerate Publication Figures
 
@@ -45,12 +47,28 @@ Expected current figure outputs are written to `figures/`:
 - `Figure_5.pdf/.svg/.png`
 - `Supplementary_Figure_S2.pdf/.svg/.png`
 
+## Recompute Analysis Layers
+
+These scripts rerun the public computational layer from the released derived inputs. Raw third-party source workbooks are not redistributed; scripts that require them document the expected local file boundary in code comments and in `DATASETS_AND_LINKS.csv`.
+
+```bash
+cd code
+python amplification.py
+python overprocurement.py
+python expansion_analysis.py
+python supply_elasticity.py
+python miso_wedge.py
+python structural_clearing.py
+```
+
+`structural_clearing.py` performs the largest Monte Carlo calculation and uses PyTorch. It runs on CPU when CUDA is unavailable, but runtime can be materially longer than the smoke test.
+
 ## Expected Checks
 
 - Dominion 2026 causation share is about 61.6%.
 - Dominion 2026 burden share is about 16.1%.
 - Dominion causation/burden ratio is about 3.8.
-- 2027 forecast-vintage revision from 2023 to 2025 is about +65%.
+- Comparable forecast-vintage revisions include +28% for the 2026 target and +65% for the 2027 target from the 2023 to 2025 vintage; the comparable 2023-2025 revision set is 5 up / 2 down and is not reported as a statistically significant ratchet.
 - The repository contains no active manuscript PDF, cover letter, reviewer-response draft, internal `rounds/` or `logs/` directory.
 
 ## Non-Reproduced Items

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Figure 1: forecast admissibility gate — mechanism diagram.
-Rewritten for clean Nature Energy submission: no text overflow, no clipping artefacts.
-Output: Figure_1.pdf/.png/.svg
+Re-written R163+ for clean NE submission: no text overflow, no clipping artefacts.
+Output: Figure_1_forecast_admissibility_gate_R162.pdf/.png/.svg
 """
 from __future__ import annotations
 import os
@@ -193,7 +193,7 @@ ax.text(ANN_X, yC + 0.100,
         color=INK, transform=ax.transAxes, clip_on=False)
 AXES_ITEMS = [
     ("Causation and burden",   "Concentrated cause, socialized burden"),
-    ("Materialization risk",   "Ratchet upward, no clawback"),
+    ("Materialization risk",   "Non-stationary forecast, no clawback"),
     ("Price amplification",    "~84% inframarginal transfer"),
 ]
 for i, (sec, desc) in enumerate(AXES_ITEMS):
@@ -261,7 +261,7 @@ for i, line in enumerate(SOC_LINES):
 
 # ══════════════════════════════════════════════════════════════════════════════
 fig.tight_layout(pad=0.2)
-NAME = "Figure_1"
+NAME = "Figure_1_forecast_admissibility_gate_R162" if "review_packages" in str(HERE) else "Figure_1"
 for ext in ["pdf", "png", "svg"]:
     fig.savefig(FIGURES / f"{NAME}.{ext}", bbox_inches="tight",
                 facecolor="white", dpi=300 if ext == "png" else None)
