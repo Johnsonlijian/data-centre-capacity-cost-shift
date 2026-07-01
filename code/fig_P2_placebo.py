@@ -106,7 +106,7 @@ for z, x, y, a in zip(zones, b, g, adj):
 ax1.text(0.97, 0.05,
          "HHI(causation) = 0.44   HHI(ordinary) = 0.09\n"
          "DOM: 61.6% cause / 16.1% pay = 3.8× gap\n"
-         "Paired Wilcoxon p < 0.001; bootstrap 95% CI: ratio [1.9, 5.0]",
+         "Descriptive Wilcoxon p < 0.001; bootstrap range: ratio [1.9, 5.0]",
          transform=ax1.transAxes, ha="right", va="bottom",
          fontsize=7.8, color=RED, fontweight="bold",
          bbox=dict(boxstyle="round,pad=0.2", fc="white", ec="none", alpha=0.85))

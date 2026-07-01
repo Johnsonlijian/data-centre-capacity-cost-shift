@@ -5,7 +5,7 @@ authors:
   - family-names: "REN"
     given-names: "Lijian"
     orcid: "https://orcid.org/0000-0003-1629-4368"
-version: "0.2.3"
+version: "0.2.4"
 date-released: "2026-07-01"
 repository-code: "https://github.com/Johnsonlijian/data-centre-capacity-cost-shift"
 license: "MIT AND CC-BY-4.0"

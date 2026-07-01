@@ -85,10 +85,10 @@ for i, r in enumerate(rows):
 
     dc = f(r["dc_share_pct"])
     if not np.isnan(dc):
-        demand_label = "national metered electricity" if "Ireland" in r["m"] else "demand"
-        note = "(2024, CSO)" if "Ireland" in r["m"] else "(2030 projection)"
-        ax.text(0.60, i + 0.17, f"data centres {dc:.0f}% of {demand_label} {note}",
-                va="center", ha="left", fontsize=8.1, color=RED)
+        demand_label = "metered electricity" if "Ireland" in r["m"] else "demand"
+        note = "2024, CSO" if "Ireland" in r["m"] else "2030 projection"
+        ax.text(0.59, i + 0.18, f"DCs: {dc:.0f}% of {demand_label} ({note})",
+                va="center", ha="left", fontsize=7.2, color=RED)
 
     if socialized:
         tag = "SOCIALIZED"
@@ -102,7 +102,7 @@ for i, r in enumerate(rows):
         sub_col = VIOLET
     elif energy_only:
         tag = "ENERGY-ONLY"
-        sub = "negative control"
+        sub = "design comparator"
         tag_col = BLUE
         sub_col = BLUE
     else:
@@ -128,7 +128,7 @@ ax.text(0.98, 0.975, "Recovery basis", fontsize=8.2, color=GREY, fontweight="bol
         ha="right", transform=ax.transAxes, va="top")
 ax.axhline(N - 0.40, color=GREY, lw=0.5, alpha=0.5)
 ax.set_title(
-    "Preconditions and boundary conditions across capacity markets; ERCOT is the negative control",
+    "Preconditions and boundary conditions across capacity markets; ERCOT is the design comparator",
     loc="left", fontsize=10.0, fontweight="bold")
 ax.text(0.5, -0.055,
         "PJM is quantified. MISO is the seasonal boundary test: uniform summer clearing supports the mechanism, "
@@ -136,7 +136,7 @@ ax.text(0.5, -0.055,
         ha="center", va="top", fontsize=7.7, color=GREY,
         transform=ax.get_xaxis_transform())
 
-fig5_name = "Figure_5_two_market_generality_R160" if "review_packages" in HERE else "Figure_5"
+fig5_name = "Figure_5"
 fig.savefig(os.path.join(OUT, f"{fig5_name}.pdf"), bbox_inches="tight")
 fig.savefig(os.path.join(OUT, f"{fig5_name}.png"), bbox_inches="tight", dpi=180)
 fig.savefig(os.path.join(OUT, f"{fig5_name}.svg"), bbox_inches="tight")
@@ -173,7 +173,7 @@ ax.text(0.5, -0.30,
 ax.legend(frameon=False, fontsize=8, loc="upper left")
 ax.grid(axis="y", color="#e0e0e0", alpha=0.6, lw=0.5)
 
-s2_name = "Supplementary_Figure_S2_bayes_ratchet" if "review_packages" in HERE else "Supplementary_Figure_S2"
+s2_name = "Supplementary_Figure_S2"
 fig.savefig(os.path.join(OUT, f"{s2_name}.pdf"), bbox_inches="tight")
 fig.savefig(os.path.join(OUT, f"{s2_name}.png"), bbox_inches="tight", dpi=180)
 fig.savefig(os.path.join(OUT, f"{s2_name}.svg"), bbox_inches="tight")

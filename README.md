@@ -25,6 +25,7 @@ This repository contains author-created code, derived tables and generated figur
 ## Repository Structure
 
 - `data/`: derived CSV datasets used by the reproducibility script.
+- `data_raw/README.md`: raw-data boundary and local rebuild instructions; raw third-party files are not redistributed.
 - `code/`: current analysis and figure scripts plus their derived inputs.
 - `tables/`: closure, bridge, data-source inventory and cross-market test tables.
 - `figures/`: publication figures exported as PDF, SVG and PNG.

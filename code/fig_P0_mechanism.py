@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Figure 1: forecast admissibility gate — mechanism diagram.
 Re-written R163+ for clean NE submission: no text overflow, no clipping artefacts.
-Output: Figure_1_forecast_admissibility_gate_R162.pdf/.png/.svg
+Output: Figure_1.pdf/.png/.svg
 """
 from __future__ import annotations
 import os
@@ -61,11 +61,11 @@ fig, ax = plt.subplots(figsize=(FIG_W, FIG_H))
 ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.axis("off")
 
 # ── Title + subtitle ──────────────────────────────────────────────────────────
-ax.text(0.012, 0.975, "The forecast admissibility gate",
+ax.text(0.012, 0.975, "Cost is committed before consumption",
         ha="left", va="top", fontsize=14, fontweight="bold",
         color=INK, transform=ax.transAxes, clip_on=False)
 ax.text(0.012, 0.920,
-        "How a speculative request stock becomes a binding, socialized capacity cost — before the load is built or its retail incidence decided.",
+        "A forecast gate turns screened large-load requests into a three-year, socialized capacity obligation before retail incidence is observable.",
         ha="left", va="top", fontsize=8.5, color=MUTED,
         transform=ax.transAxes, clip_on=False)
 
@@ -188,13 +188,13 @@ ax.annotate("", xy=(WH_X + WH_W / 2, 0.298),
 # ── THREE AXES annotation block (right of wholesale) ─────────────────────────
 ANN_X = WH_X + WH_W + 0.018
 ax.text(ANN_X, yC + 0.100,
-        "Three measurement axes:",
+        "Empirical signatures:",
         ha="left", va="center", fontsize=7.4, fontweight="bold",
         color=INK, transform=ax.transAxes, clip_on=False)
 AXES_ITEMS = [
-    ("Causation and burden",   "Concentrated cause, socialized burden"),
-    ("Materialization risk",   "Non-stationary forecast, no clawback"),
-    ("Price amplification",    "~84% inframarginal transfer"),
+    ("Fig. 2: causation vs burden",   "Concentrated cause, socialized burden"),
+    ("Fig. 3: forecast movement",     "Non-stationary forecast, no clawback"),
+    ("Fig. 4: price amplification",   "~84% inframarginal transfer"),
 ]
 for i, (sec, desc) in enumerate(AXES_ITEMS):
     yi = yC + 0.045 - i * 0.060
@@ -261,7 +261,7 @@ for i, line in enumerate(SOC_LINES):
 
 # ══════════════════════════════════════════════════════════════════════════════
 fig.tight_layout(pad=0.2)
-NAME = "Figure_1_forecast_admissibility_gate_R162" if "review_packages" in str(HERE) else "Figure_1"
+NAME = "Figure_1"
 for ext in ["pdf", "png", "svg"]:
     fig.savefig(FIGURES / f"{NAME}.{ext}", bbox_inches="tight",
                 facecolor="white", dpi=300 if ext == "png" else None)

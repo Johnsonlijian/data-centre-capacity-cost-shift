@@ -40,7 +40,7 @@ try:
     dcgap=np.abs(g_arr-b_arr); ordgap=np.abs(o_arr-b_arr)
     stat,p=wilcoxon(dcgap, ordgap, alternative='greater')
     print(f"\nPaired Wilcoxon |DC gap| > |ordinary gap|: stat={stat:.0f}, p={p:.2e} => p < 0.001 (verified)")
-    # (2) Bootstrap CIs: resample zones w/ replacement; normalize shares within each resample
+    # (2) Bootstrap ranges: resample zones w/ replacement; normalize shares within each resample
     HHI=lambda s: float(np.sum(s*s))
     RNG=np.random.default_rng(0); B=20000; dhhi=[]; dratio=[]
     for _ in range(B):
@@ -52,7 +52,7 @@ try:
         j=int(np.argmax(gg))
         if bb[j]>0: dratio.append((gg[j]/gg.sum())/(bb[j]/bb.sum()))
     lo_h,hi_h=np.percentile(dhhi,[2.5,97.5]); lo_r,hi_r=np.percentile(dratio,[2.5,97.5])
-    print(f"Bootstrap 95% CI: HHI gap [{lo_h:.2f}, {hi_h:.2f}] ; max-zone ratio [{lo_r:.1f}, {hi_r:.1f}]")
+    print(f"Bootstrap range: HHI gap [{lo_h:.2f}, {hi_h:.2f}] ; max-zone ratio [{lo_r:.1f}, {hi_r:.1f}]")
     print(f"  (manuscript values: HHI gap [0.10, 0.72] ; Dominion ratio [1.9, 5.0])")
 except ImportError:
     print("(scipy/numpy not available; install with: pip install scipy numpy)")

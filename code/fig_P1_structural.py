@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Figure 4: price-amplification transfer — structural decomposition + Monte Carlo robustness.
 Panel (a): stacked $B bars by delivery year (resource cost teal | transfer amber), with
-3-auction total. Panel (b): Monte Carlo posterior of transfer share, with sensitivity band.
+3-auction total. Panel (b): Monte Carlo sensitivity distribution of transfer share.
 """
 import os, json
 import numpy as np
@@ -118,7 +118,7 @@ axL.legend(handles=legend_els, loc="upper right", frameon=False,
            fontsize=8.0, handlelength=1.1)
 axL.set_title("(a)   Per-delivery-year P×Q decomposition", loc="left", fontsize=10)
 
-# ── Panel (b): Monte Carlo posterior ──────────────────────────────────────────
+# ── Panel (b): Monte Carlo sensitivity distribution ───────────────────────────
 mc_path = os.path.join(HERE, "P1_mc_share.npy")
 j_path  = os.path.join(HERE, "P1_structural_transfer.json")
 
@@ -137,12 +137,12 @@ if os.path.exists(mc_path) and os.path.exists(j_path):
     axR.fill_between(centers, smooth, alpha=0.38, color=TEAL, step="mid")
     axR.plot(centers, smooth, color=TEAL, lw=1.2, drawstyle="steps-mid", alpha=0.7)
 
-    axR.axvspan(lo, hi,  color=TEAL,  alpha=0.13, label=f"90% CI [{lo:.0f}, {hi:.0f}]%")
+    axR.axvspan(lo, hi,  color=TEAL,  alpha=0.13, label=f"90% interval [{lo:.0f}, {hi:.0f}]%")
     axR.axvline(med,     color=INK,   lw=2.0, zorder=5, label=f"median {med:.0f}%")
     axR.axvspan(78, 90,  color=AMBER, alpha=0.20, label="sensitivity range 78–90%")
 
     axR.set_xlabel("inframarginal-transfer share (%)", fontsize=9)
-    axR.set_ylabel("posterior density", fontsize=9)
+    axR.set_ylabel("sensitivity density", fontsize=9)
     axR.set_title("(b)   Monte Carlo robustness check\n"
                   r"      8$\times$10$^6$ draws over 2025/26 price-reference uncertainty",
                   loc="left", fontsize=9.5)
@@ -157,7 +157,7 @@ fig.suptitle(
     "~84% of the USD 21.26B capacity-market effect is a wealth transfer to incumbents, not a cost of service",
     fontsize=10.8, fontweight="bold", y=0.97)
 
-name = "Figure_6_price_amplification_R160" if "review_packages" in HERE else "Figure_4"
+name = "Figure_4"
 fig.savefig(os.path.join(OUT, f"{name}.pdf"), bbox_inches="tight")
 fig.savefig(os.path.join(OUT, f"{name}.png"), bbox_inches="tight", dpi=180)
 fig.savefig(os.path.join(OUT, f"{name}.svg"), bbox_inches="tight")

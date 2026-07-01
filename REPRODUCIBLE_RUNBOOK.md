@@ -47,6 +47,8 @@ Expected current figure outputs are written to `figures/`:
 - `Figure_5.pdf/.svg/.png`
 - `Supplementary_Figure_S2.pdf/.svg/.png`
 
+`Supplementary_Figure_S1.pdf/.svg/.png` is an author-created static disclosure-chain schematic included in `figures/`; it has no quantitative dependency and is not rebuilt by the smoke test.
+
 ## Recompute Analysis Layers
 
 These scripts rerun the public computational layer from the released derived inputs. Raw third-party source workbooks are not redistributed; scripts that require them document the expected local file boundary in code comments and in `DATASETS_AND_LINKS.csv`.
@@ -73,4 +75,4 @@ python structural_clearing.py
 
 ## Non-Reproduced Items
 
-Raw official workbooks and filings are not redistributed. Re-running the complete raw-data extraction from original official PDFs/XLSX files requires downloading the official records listed in `DATASETS_AND_LINKS.csv` and following the locators in `tables/Supplementary_Table_3_data_source_inventory.csv`.
+Raw official workbooks and filings are not redistributed. Re-running the complete raw-data extraction from original official PDFs/XLSX files requires downloading the official records listed in `DATASETS_AND_LINKS.csv`, placing them under a local `data_raw/` directory, and following the locators in `tables/Supplementary_Table_3_data_source_inventory.csv`. The released package reproduces the public derived computational layer and key claim checks, not a redistribution of raw third-party source files.

@@ -5,6 +5,7 @@ CITATION.cff,citation_metadata,public
 DATASETS_AND_LINKS.csv,source_registry,public
 REPRODUCIBLE_RUNBOOK.md,runbook,public
 requirements.txt,environment,public
+data_raw/README.md,raw_data_boundary_note,public
 scripts/reproduce_results.py,smoke_test_code,public
 code/amplification.py,analysis_code,public
 code/crosszonal_analysis.py,analysis_code,public

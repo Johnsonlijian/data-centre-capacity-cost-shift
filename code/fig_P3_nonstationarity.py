@@ -120,7 +120,7 @@ fig.suptitle(
     "The admitted forecast is materially non-stationary before capacity is committed",
     fontsize=10.8, fontweight="bold", y=0.97)
 
-name = "Figure_4_forecast_nonstationarity_R160" if "review_packages" in HERE else "Figure_3"
+name = "Figure_3"
 out = os.path.join(FIG, f"{name}.pdf")
 fig.savefig(out, bbox_inches="tight", facecolor="white")
 fig.savefig(out.replace(".pdf", ".png"), bbox_inches="tight", facecolor="white", dpi=180)

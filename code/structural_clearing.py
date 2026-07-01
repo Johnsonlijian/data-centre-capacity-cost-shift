@@ -91,7 +91,7 @@ print(f"AGG marginal-structural transfer = ${tot_t/1e9:.1f}B / ${tot_d/1e9:.1f}B
 #   - 2025/26 NetCONE (unknown) and LDA-premium attribution
 # We re-clear each sample: demand = piecewise-linear VRR (passes through observed clearing);
 # supply = Pmarg*exp(beta*(Q/oblig-1)); counterfactual shifts RR left by dQ. Solve S=D by
-# vectorized bisection. Report posterior of the aggregate transfer share.
+# vectorized bisection. Report the Monte Carlo sensitivity distribution of the aggregate transfer share.
 # ---------------------------------------------------------------------------
 def vrr_price(Q, RR, netcone, a1,a2,a3, capmult):
     # piecewise-linear decreasing VRR in $/MW-day. Points:

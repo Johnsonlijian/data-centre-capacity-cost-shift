@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-01T09:58:49.551498</dc:date>
+    <dc:date>2026-07-01T12:22:15.199511</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -21,93 +21,93 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 364.650308 
-L 664.128 364.650308 
-L 664.128 0 
-L 0 0 
+   <path d="M 0 364.650308
+L 664.128 364.650308
+L 664.128 0
+L 0 0
 z
 " style="fill: #ffffff"/>
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 7.2 333.214125 
-L 656.928 333.214125 
-L 656.928 19.978125 
-L 7.2 19.978125 
+    <path d="M 7.2 333.214125
+L 656.928 333.214125
+L 656.928 19.978125
+L 7.2 19.978125
 z
 " style="fill: #ffffff"/>
    </g>
    <g id="patch_3">
-    <path d="M 7.2 325.891725 
-L 656.928 325.891725 
-L 656.928 295.788525 
-L 7.2 295.788525 
+    <path d="M 7.2 325.891725
+L 656.928 325.891725
+L 656.928 295.788525
+L 7.2 295.788525
 z
-" clip-path="url(#p51c20fb67c)" style="fill: #dce4e8; opacity: 0.5"/>
+" clip-path="url(#paa8d9ac815)" style="fill: #dce4e8; opacity: 0.5"/>
    </g>
    <g id="patch_4">
-    <path d="M 7.2 285.211725 
-L 656.928 285.211725 
-L 656.928 255.108525 
-L 7.2 255.108525 
+    <path d="M 7.2 285.211725
+L 656.928 285.211725
+L 656.928 255.108525
+L 7.2 255.108525
 z
-" clip-path="url(#p51c20fb67c)" style="fill: #6b5b95; opacity: 0.5"/>
+" clip-path="url(#paa8d9ac815)" style="fill: #6b5b95; opacity: 0.5"/>
    </g>
    <g id="patch_5">
-    <path d="M 7.2 244.531725 
-L 656.928 244.531725 
-L 656.928 214.428525 
-L 7.2 214.428525 
+    <path d="M 7.2 244.531725
+L 656.928 244.531725
+L 656.928 214.428525
+L 7.2 214.428525
 z
-" clip-path="url(#p51c20fb67c)" style="fill: #d98a3d; opacity: 0.5"/>
+" clip-path="url(#paa8d9ac815)" style="fill: #d98a3d; opacity: 0.5"/>
    </g>
    <g id="patch_6">
-    <path d="M 7.2 203.851725 
-L 656.928 203.851725 
-L 656.928 173.748525 
-L 7.2 173.748525 
+    <path d="M 7.2 203.851725
+L 656.928 203.851725
+L 656.928 173.748525
+L 7.2 173.748525
 z
-" clip-path="url(#p51c20fb67c)" style="fill: #d98a3d; opacity: 0.5"/>
+" clip-path="url(#paa8d9ac815)" style="fill: #d98a3d; opacity: 0.5"/>
    </g>
    <g id="patch_7">
-    <path d="M 7.2 163.171725 
-L 656.928 163.171725 
-L 656.928 133.068525 
-L 7.2 133.068525 
+    <path d="M 7.2 163.171725
+L 656.928 163.171725
+L 656.928 133.068525
+L 7.2 133.068525
 z
-" clip-path="url(#p51c20fb67c)" style="fill: #d98a3d; opacity: 0.5"/>
+" clip-path="url(#paa8d9ac815)" style="fill: #d98a3d; opacity: 0.5"/>
    </g>
    <g id="patch_8">
-    <path d="M 7.2 122.491725 
-L 656.928 122.491725 
-L 656.928 92.388525 
-L 7.2 92.388525 
+    <path d="M 7.2 122.491725
+L 656.928 122.491725
+L 656.928 92.388525
+L 7.2 92.388525
 z
-" clip-path="url(#p51c20fb67c)" style="fill: #d98a3d; opacity: 0.5"/>
+" clip-path="url(#paa8d9ac815)" style="fill: #d98a3d; opacity: 0.5"/>
    </g>
    <g id="patch_9">
-    <path d="M 7.2 81.811725 
-L 656.928 81.811725 
-L 656.928 51.708525 
-L 7.2 51.708525 
+    <path d="M 7.2 81.811725
+L 656.928 81.811725
+L 656.928 51.708525
+L 7.2 51.708525
 z
-" clip-path="url(#p51c20fb67c)" style="fill: #d98a3d; opacity: 0.5"/>
+" clip-path="url(#paa8d9ac815)" style="fill: #d98a3d; opacity: 0.5"/>
    </g>
    <g id="matplotlib.axis_1"/>
    <g id="matplotlib.axis_2"/>
    <g id="line2d_1">
-    <path d="M 7.2 42.352125 
-L 656.928 42.352125 
-" clip-path="url(#p51c20fb67c)" style="fill: none; stroke: #7d858c; stroke-opacity: 0.5; stroke-width: 0.5; stroke-linecap: square"/>
+    <path d="M 7.2 42.352125
+L 656.928 42.352125
+" clip-path="url(#paa8d9ac815)" style="fill: none; stroke: #7d858c; stroke-opacity: 0.5; stroke-width: 0.5; stroke-linecap: square"/>
    </g>
    <g id="patch_10">
-    <path d="M 7.2 333.214125 
-L 7.2 19.978125 
+    <path d="M 7.2 333.214125
+L 7.2 19.978125
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_11">
-    <path d="M 7.2 333.214125 
-L 656.928 333.214125 
+    <path d="M 7.2 333.214125
+L 656.928 333.214125
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="text_1">
@@ -121,7 +121,7 @@ L 656.928 333.214125
     <text style="font-weight: 700; font-size: 8.9px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #34618f" x="643.93344" y="307.139777" transform="rotate(-0 643.93344 307.139777)">ENERGY-ONLY</text>
    </g>
    <g id="text_4">
-    <text style="font-size: 7.9px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #34618f" x="643.93344" y="320.05297" transform="rotate(-0 643.93344 320.05297)">negative control</text>
+    <text style="font-size: 7.9px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #34618f" x="643.93344" y="320.05297" transform="rotate(-0 643.93344 320.05297)">design comparator</text>
    </g>
    <g id="text_5">
     <text style="font-weight: 700; font-size: 9.6px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #222222" x="13.69728" y="272.311875" transform="rotate(-0 13.69728 272.311875)">MISO</text>
@@ -144,7 +144,7 @@ L 656.928 333.214125
     <text style="font-size: 8.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #7d858c" transform="translate(208.61568 235.893422)">(prequalification)</text>
    </g>
    <g id="text_11">
-    <text style="font-size: 8.1px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #b3402e" x="397.0368" y="224.504728" transform="rotate(-0 397.0368 224.504728)">data centres 3% of demand (2030 projection)</text>
+    <text style="font-size: 7.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #b3402e" x="390.53952" y="223.88235" transform="rotate(-0 390.53952 223.88235)">DCs: 3% of demand (2030 projection)</text>
    </g>
    <g id="text_12">
     <text style="font-weight: 700; font-size: 8.9px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #7a4a13" x="643.93344" y="225.779777" transform="rotate(-0 643.93344 225.779777)">SOCIALIZED</text>
@@ -199,7 +199,7 @@ L 656.928 333.214125
     <text style="font-size: 8.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; fill: #7d858c" transform="translate(208.61568 73.158047)">(capacity agreement)</text>
    </g>
    <g id="text_28">
-    <text style="font-size: 8.1px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #b3402e" x="397.0368" y="61.78283" transform="rotate(-0 397.0368 61.78283)">data centres 22% of national metered electricity (2024, CSO)</text>
+    <text style="font-size: 7.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #b3402e" x="390.53952" y="61.160663" transform="rotate(-0 390.53952 61.160663)">DCs: 22% of metered electricity (2024, CSO)</text>
    </g>
    <g id="text_29">
     <text style="font-weight: 700; font-size: 8.9px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: end; fill: #7a4a13" x="643.93344" y="63.059777" transform="rotate(-0 643.93344 63.059777)">SOCIALIZED</text>
@@ -220,12 +220,12 @@ L 656.928 333.214125
     <text style="font-size: 7.7px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle; fill: #7d858c" x="332.064" y="355.788792" transform="rotate(-0 332.064 355.788792)">PJM is quantified. MISO is the seasonal boundary test: uniform summer clearing supports the mechanism, while constrained fall clearing localizes it. Other markets are precondition checks.</text>
    </g>
    <g id="text_35">
-    <text style="font-weight: 700; font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start" x="7.2" y="13.978125" transform="rotate(-0 7.2 13.978125)">Preconditions and boundary conditions across capacity markets; ERCOT is the negative control</text>
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start" x="7.2" y="13.978125" transform="rotate(-0 7.2 13.978125)">Preconditions and boundary conditions across capacity markets; ERCOT is the design comparator</text>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p51c20fb67c">
+  <clipPath id="paa8d9ac815">
    <rect x="7.2" y="19.978125" width="649.728" height="313.236"/>
   </clipPath>
  </defs>
