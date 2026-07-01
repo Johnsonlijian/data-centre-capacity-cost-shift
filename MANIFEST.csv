@@ -26,6 +26,7 @@ tables/Supplementary_Table_1_variable_closure_matrix.csv,derived_table,public
 tables/Supplementary_Table_2_multi_rule_dom_bridge.csv,derived_table,public
 tables/Supplementary_Table_3_data_source_inventory.csv,source_inventory_table,public
 tables/Supplementary_Table_4_cross_market_test.csv,derived_table,public
+tables/Supplementary_Table_5_price_amplification_reconstruction.csv,derived_table,public
 figures/Figure_1.pdf,generated_figure,public
 figures/Figure_1.svg,generated_figure,public
 figures/Figure_1.png,generated_figure,public

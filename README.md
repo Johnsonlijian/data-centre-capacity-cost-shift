@@ -10,7 +10,7 @@ This repository contains author-created code, derived tables and generated figur
 
 - PJM cross-zonal causation-versus-burden shares from derived zone-level data.
 - Forecast-vintage non-stationarity checks.
-- Structural price-amplification, supply-elasticity, over-procurement and cross-market checks.
+- Structural price-amplification, including the per-delivery-year P x Q reconstruction table, supply-elasticity, over-procurement and cross-market checks.
 - Data-source inventory and variable-closure tables used to bound claims.
 - Main manuscript figures and supplementary figures as PDF, SVG and PNG.
 - Reproducibility smoke tests that verify the key derived numerical claims in the package.
@@ -27,7 +27,7 @@ This repository contains author-created code, derived tables and generated figur
 - `data/`: derived CSV datasets used by the reproducibility script.
 - `data_raw/README.md`: raw-data boundary and local rebuild instructions; raw third-party files are not redistributed.
 - `code/`: current analysis and figure scripts plus their derived inputs.
-- `tables/`: closure, bridge, data-source inventory and cross-market test tables.
+- `tables/`: closure, bridge, data-source inventory, cross-market test and price-amplification reconstruction tables.
 - `figures/`: publication figures exported as PDF, SVG and PNG.
 - `scripts/reproduce_results.py`: relative-path smoke test and diagnostic plot builder.
 - `docs/public_private_boundary.md`: what is and is not released.

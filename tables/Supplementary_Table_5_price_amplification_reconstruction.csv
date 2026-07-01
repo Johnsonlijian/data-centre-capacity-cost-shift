@@ -1,0 +1,5 @@
+delivery_year,actual_revenue_usd,imm_counterfactual_revenue_usd,imm_effect_delta_revenue_usd,actual_obligation_mw,above_embedded_mw,forecast_pool_requirement,incremental_ucap_mw,counterfactual_obligation_mw,actual_avg_price_usd_per_mw_day,counterfactual_avg_price_usd_per_mw_day,resource_cost_usd,inframarginal_transfer_usd,amplification_delta_over_resource,transfer_share_pct,status_note
+2025/26,14687047358,6944087201,7742960157,135684.0,4654,1.09,5072.9,130611.1,296.56,145.66,549109217.0,7193850940.0,14.1,92.9,average-price structural split; model-free cross-check in SI S6a
+2026/27,16124370889,8853172918,7271197971,134205.3,7892,1.09,8602.3,125603.0,329.17,193.11,1033538565.0,6237659406.0,7.04,85.8,cap-exact uniform pricing under ER25-1357 collar
+2027/28,16411578225,10167054398,6244523827,134478.1,13018,1.09,14189.6,120288.5,334.35,231.57,1731687603.0,4512836224.0,3.61,72.3,cap-exact uniform pricing under ER25-1357 collar
+Total,47222996472,25964314517,21258681955,,,1.09,27864.8,,,,3314335385.0,17944346570.0,6.41,84.4,sum of delivery-year components
