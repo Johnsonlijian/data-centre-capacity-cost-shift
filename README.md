@@ -4,6 +4,8 @@ Reproducibility package for the manuscript:
 
 **Committed before consumption: how forecast data-centre load socializes capacity cost**
 
+Versioned Zenodo archive: https://doi.org/10.5281/zenodo.21102968
+
 This repository contains author-created code, derived tables and generated figures for reproducing the public-record computational layer of the manuscript. It does not contain the active submission manuscript, cover letter, reviewer-response drafts, internal rounds/logs or raw third-party official source files.
 
 ## What This Package Reproduces
