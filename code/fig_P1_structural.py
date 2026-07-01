@@ -30,7 +30,7 @@ RED   = "#b3402e"
 BLUE  = "#34618f"
 WHITE = "#ffffff"
 
-# ── SI S6 data (structural P×Q, average zonal price) ─────────────────────────
+# SI S6 data (structural P x Q, average zonal price)
 YEARS   = ["2025/26",  "2026/27",  "2027/28"]
 RES_B   = [0.55,       1.03,       1.73]    # resource cost $B
 TRAN_B  = [7.19,       6.24,       4.51]    # inframarginal transfer $B
@@ -98,14 +98,14 @@ axL.set_ylabel("USD billions (IMM, restricted-curve)", fontsize=9)
 
 # "amplification" annotation on the total bar
 total_h = TOTAL_RES + TOTAL_TRAN
-axL.annotate("6.4× amplification\n(revenue / resource cost)",
+axL.annotate("6.4x amplification\n(revenue / resource cost)",
              xy=(3.8 + w/2 + 0.04, total_h * 0.62),
              xytext=(2.9, total_h * 0.82),
              fontsize=7.5, color=INK, ha="center", va="center",
              arrowprops=dict(arrowstyle="->", color=GREY, lw=0.7))
 
 # "robust 84-86%" note
-axL.text(0.01, -0.07, "* 2025/26 at avg. zonal price; robust 84–86% under reserve-margin sensitivity",
+axL.text(0.01, -0.07, "* 2025/26 at avg. zonal price; robust 84-86% under reserve-margin sensitivity",
          fontsize=6.6, color=GREY, style="italic", ha="left", va="top",
          transform=axL.transAxes)
 
@@ -116,7 +116,7 @@ legend_els = [
 ]
 axL.legend(handles=legend_els, loc="upper right", frameon=False,
            fontsize=8.0, handlelength=1.1)
-axL.set_title("(a)   Per-delivery-year P×Q decomposition", loc="left", fontsize=10)
+axL.set_title("(a)   Per-delivery-year P x Q decomposition", loc="left", fontsize=10)
 
 # ── Panel (b): Monte Carlo sensitivity distribution ───────────────────────────
 mc_path = os.path.join(HERE, "P1_mc_share.npy")
@@ -139,12 +139,12 @@ if os.path.exists(mc_path) and os.path.exists(j_path):
 
     axR.axvspan(lo, hi,  color=TEAL,  alpha=0.13, label=f"90% interval [{lo:.0f}, {hi:.0f}]%")
     axR.axvline(med,     color=INK,   lw=2.0, zorder=5, label=f"median {med:.0f}%")
-    axR.axvspan(78, 90,  color=AMBER, alpha=0.20, label="sensitivity range 78–90%")
+    axR.axvspan(78, 90,  color=AMBER, alpha=0.20, label="sensitivity range 78-90%")
 
     axR.set_xlabel("inframarginal-transfer share (%)", fontsize=9)
     axR.set_ylabel("sensitivity density", fontsize=9)
     axR.set_title("(b)   Monte Carlo robustness check\n"
-                  r"      8$\times$10$^6$ draws over 2025/26 price-reference uncertainty",
+                  "      8 million draws over 2025/26 price-reference uncertainty",
                   loc="left", fontsize=9.5)
     axR.yaxis.set_ticks([])
     axR.legend(frameon=False, fontsize=8.2, loc="upper left")
