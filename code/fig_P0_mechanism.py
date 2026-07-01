@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-"""Figure 1: forecast admissibility gate — mechanism diagram.
-Re-written R163+ for clean NE submission: no text overflow, no clipping artefacts.
+"""Figure 1: forecast admissibility gate mechanism diagram.
+Submission version with stable layout and no text overflow.
 Output: Figure_1.pdf/.png/.svg
 """
 from __future__ import annotations
@@ -39,7 +39,7 @@ GATE_BG = "#EAF1F8"
 TEAL_BG = "#EAF6F4"
 AMBER_BG = "#FBF4EC"
 
-FIG_W, FIG_H = 14.0, 5.8   # inches — wide-format, single-figure NE standard
+FIG_W, FIG_H = 14.0, 5.8   # inches; wide-format, single-figure NE standard
 
 
 def arrow(ax, x0, y0, x1, y1, color=MUTED, lw=1.6, head="->"):
@@ -77,8 +77,8 @@ yC = 0.60
 # ── Stage 0: speculative stock (three shrinking boxes) ───────────────────────
 STACK_ITEMS = [
     ("queue ~70 GW",  0.110),
-    ("≈ 3× DOM peak", 0.082),
-    ("~2–3 GW/mo",    0.056),
+    ("approx 3x DOM peak", 0.082),
+    ("~2-3 GW/mo",         0.056),
 ]
 X_STACK = 0.082  # centre
 ax.text(X_STACK, yC + 0.21, "Speculative\nrequest stock",
@@ -118,9 +118,9 @@ ax.text((GX0 + GX1) / 2, yC + GY_HI + 0.055,
 # Four gate criteria — centred inside the trapezoid
 CRITERIA = [
     ("Firmness test",     "ESO/CC-firm load only"),
-    ("Utilization derate","70% default, ramp ≥ 36 mo"),
+    ("Utilization derate","70% default, ramp >= 36 mo"),
     ("Duplication filter","unsupported dups removed"),
-    ("Ramp schedule",     "≥ 36-month in-service"),
+    ("Ramp schedule",     ">=36-month in-service"),
 ]
 n = len(CRITERIA)
 cx = (GX0 + GX1) / 2 - 0.01   # slightly left of centre (trapezoid is wider left)
@@ -137,7 +137,7 @@ for j, (k, sub) in enumerate(CRITERIA):
 
 # note below gate
 ax.text((GX0 + GX1) / 2, yC - GY_HI - 0.038,
-        "DOM queue ~70 GW  →  16.6 GW admitted",
+        "DOM queue ~70 GW  ->  16.6 GW admitted",
         ha="center", va="top", fontsize=6.8, style="italic",
         color=OPEN, transform=ax.transAxes, clip_on=False)
 
@@ -228,7 +228,7 @@ ax.text(OPN_X + OPN_W / 2, BROW_Y + OPN_H - 0.022,
         ha="center", va="top", fontsize=8.0, fontweight="bold",
         color=OPEN, transform=ax.transAxes, clip_on=False)
 OPEN_LINES = [
-    "zone → LSE settlement: confidential",
+    "zone -> LSE settlement: confidential",
     "cross-class allocation: pending",
     "household incidence: NOT point-identifiable",
 ]
@@ -250,7 +250,7 @@ ax.text(SOC_X + SOC_W / 2, BROW_Y + SOC_H - 0.022,
         ha="center", va="top", fontsize=8.0, fontweight="bold",
         color=AMBER, transform=ax.transAxes, clip_on=False)
 SOC_LINES = [
-    "DOM causes 61.6%  /  bears 16.1%  →  3.8× causation–burden gap",
+    "DOM causes 61.6%  /  bears 16.1%  ->  3.8x causation-burden gap",
     "84% of effect is inframarginal transfer to incumbents (not cost of service)",
     "Household-dollar incidence not derivable from wholesale record alone",
 ]

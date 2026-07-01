@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-01T11:59:57.315723</dc:date>
+    <dc:date>2026-07-01T15:27:25.922786</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -147,10 +147,10 @@ L 386.119944 308.592
     <text style="font-size: 7px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle; fill: #1a2332" x="86.870347" y="133.081641" transform="rotate(-0 86.870347 133.081641)">queue ~70 GW</text>
    </g>
    <g id="text_5">
-    <text style="font-size: 7px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle; fill: #1a2332" x="86.870347" y="158.749641" transform="rotate(-0 86.870347 158.749641)">â‰?3Ã— DOM peak</text>
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle; fill: #1a2332" x="86.870347" y="158.749641" transform="rotate(-0 86.870347 158.749641)">approx 3x DOM peak</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 7px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle; fill: #1a2332" x="86.870347" y="184.417641" transform="rotate(-0 86.870347 184.417641)">~2â€? GW/mo</text>
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle; fill: #1a2332" x="86.870347" y="184.417641" transform="rotate(-0 86.870347 184.417641)">~2-3 GW/mo</text>
    </g>
    <g id="patch_10">
     <path d="M 156.882914 172.8
@@ -174,7 +174,7 @@ L 190.461711 174.6
     <text style="font-weight: 700; font-size: 7.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle; fill: #2f5e8a" x="298.67688" y="158.011875" transform="rotate(-0 298.67688 158.011875)">  Utilization derate</text>
    </g>
    <g id="text_11">
-    <text style="font-size: 6.4px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle; fill: #5a6b7b" x="298.67688" y="174.76" transform="rotate(-0 298.67688 174.76)">70% default, ramp â‰?36 mo</text>
+    <text style="font-size: 6.4px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle; fill: #5a6b7b" x="298.67688" y="174.76" transform="rotate(-0 298.67688 174.76)">70% default, ramp &gt;= 36 mo</text>
    </g>
    <g id="text_12">
     <text style="font-weight: 700; font-size: 7.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle; fill: #2f5e8a" x="298.67688" y="182.023875" transform="rotate(-0 298.67688 182.023875)">  Duplication filter</text>
@@ -186,10 +186,10 @@ L 190.461711 174.6
     <text style="font-weight: 700; font-size: 7.2px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle; fill: #2f5e8a" x="298.67688" y="206.035875" transform="rotate(-0 298.67688 206.035875)">  Ramp schedule</text>
    </g>
    <g id="text_15">
-    <text style="font-size: 6.4px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle; fill: #5a6b7b" x="298.67688" y="222.784" transform="rotate(-0 298.67688 222.784)">â‰?36-month in-service</text>
+    <text style="font-size: 6.4px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle; fill: #5a6b7b" x="298.67688" y="222.784" transform="rotate(-0 298.67688 222.784)">&gt;=36-month in-service</text>
    </g>
    <g id="text_16">
-    <text style="font-style: italic; font-size: 6.8px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle; fill: #c24a3a" x="308.392776" y="265.70375" transform="rotate(-0 308.392776 265.70375)">DOM queue ~70 GW  â†? 16.6 GW admitted</text>
+    <text style="font-style: italic; font-size: 6.8px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle; fill: #c24a3a" x="308.392776" y="265.70375" transform="rotate(-0 308.392776 265.70375)">DOM queue ~70 GW  -&gt;  16.6 GW admitted</text>
    </g>
    <g id="patch_11">
     <path d="M 421.151489 172.8
@@ -265,7 +265,7 @@ z
     <text style="font-weight: 700; font-size: 8px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle; fill: #c24a3a" x="194.230998" y="327.9655" transform="rotate(-0 194.230998 327.9655)">OPEN: retail allocation</text>
    </g>
    <g id="text_31">
-    <text style="font-size: 7px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #1a2332" x="28.574971" y="342.432625" transform="rotate(-0 28.574971 342.432625)">zone â†?LSE settlement: confidential</text>
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #1a2332" x="28.574971" y="342.432625" transform="rotate(-0 28.574971 342.432625)">zone -&gt; LSE settlement: confidential</text>
    </g>
    <g id="text_32">
     <text style="font-size: 7px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #1a2332" x="28.574971" y="358.164625" transform="rotate(-0 28.574971 358.164625)">cross-class allocation: pending</text>
@@ -286,7 +286,7 @@ L 383.459973 344.673
     <text style="font-weight: 700; font-size: 8px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle; fill: #d98a3d" x="714.517229" y="328.0905" transform="rotate(-0 714.517229 328.0905)">Socialized by consumption (pro-rata)</text>
    </g>
    <g id="text_35">
-    <text style="font-size: 7px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #1a2332" x="424.983528" y="342.432625" transform="rotate(-0 424.983528 342.432625)">DOM causes 61.6%  /  bears 16.1%  â†? 3.8Ã— causationâ€“burden gap</text>
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #1a2332" x="424.983528" y="342.432625" transform="rotate(-0 424.983528 342.432625)">DOM causes 61.6%  /  bears 16.1%  -&gt;  3.8x causation-burden gap</text>
    </g>
    <g id="text_36">
     <text style="font-size: 7px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start; fill: #1a2332" x="424.983528" y="358.164625" transform="rotate(-0 424.983528 358.164625)">84% of effect is inframarginal transfer to incumbents (not cost of service)</text>
